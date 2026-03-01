@@ -1,0 +1,175 @@
+0000000000001169 <main>:
+    1169:	f3 0f 1e fa          	endbr64
+    116d:	55                   	push   rbp
+    116e:	48 89 e5             	mov    rbp,rsp
+    1171:	48 83 ec 50          	sub    rsp,0x50
+    1175:	64 48 8b 04 25 28 00 	mov    rax,QWORD PTR fs:0x28
+    117c:	00 00
+    117e:	48 89 45 f8          	mov    QWORD PTR [rbp-0x8],rax
+    1182:	31 c0                	xor    eax,eax
+    1184:	48 8d 05 7d 0e 00 00 	lea    rax,[rip+0xe7d]        # 2008 <_IO_stdin_used+0x8>
+    118b:	48 89 45 b8          	mov    QWORD PTR [rbp-0x48],rax
+    118f:	48 8b 45 b8          	mov    rax,QWORD PTR [rbp-0x48]
+    1193:	0f b6 80 5f 01 00 00 	movzx  eax,BYTE PTR [rax+0x15f]
+    119a:	88 45 c0             	mov    BYTE PTR [rbp-0x40],al
+    119d:	48 8b 45 b8          	mov    rax,QWORD PTR [rbp-0x48]
+    11a1:	0f b6 80 75 04 00 00 	movzx  eax,BYTE PTR [rax+0x475]
+    11a8:	88 45 c1             	mov    BYTE PTR [rbp-0x3f],al
+    11ab:	48 8b 45 b8          	mov    rax,QWORD PTR [rbp-0x48]
+    11af:	0f b6 80 60 07 00 00 	movzx  eax,BYTE PTR [rax+0x760]
+    11b6:	88 45 c2             	mov    BYTE PTR [rbp-0x3e],al
+    11b9:	48 8b 45 b8          	mov    rax,QWORD PTR [rbp-0x48]
+    11bd:	0f b6 80 13 02 00 00 	movzx  eax,BYTE PTR [rax+0x213]
+    11c4:	88 45 c3             	mov    BYTE PTR [rbp-0x3d],al
+    11c7:	48 8b 45 b8          	mov    rax,QWORD PTR [rbp-0x48]
+    11cb:	0f b6 80 a0 02 00 00 	movzx  eax,BYTE PTR [rax+0x2a0]
+    11d2:	88 45 c4             	mov    BYTE PTR [rbp-0x3c],al
+    11d5:	48 8b 45 b8          	mov    rax,QWORD PTR [rbp-0x48]
+    11d9:	0f b6 80 88 06 00 00 	movzx  eax,BYTE PTR [rax+0x688]
+    11e0:	88 45 c5             	mov    BYTE PTR [rbp-0x3b],al
+    11e3:	48 8b 45 b8          	mov    rax,QWORD PTR [rbp-0x48]
+    11e7:	0f b6 80 cd 06 00 00 	movzx  eax,BYTE PTR [rax+0x6cd]
+    11ee:	88 45 c6             	mov    BYTE PTR [rbp-0x3a],al
+    11f1:	48 8b 45 b8          	mov    rax,QWORD PTR [rbp-0x48]
+    11f5:	0f b6 80 2a 03 00 00 	movzx  eax,BYTE PTR [rax+0x32a]
+    11fc:	88 45 c7             	mov    BYTE PTR [rbp-0x39],al
+    11ff:	48 8b 45 b8          	mov    rax,QWORD PTR [rbp-0x48]
+    1203:	0f b6 40 65          	movzx  eax,BYTE PTR [rax+0x65]
+    1207:	88 45 c8             	mov    BYTE PTR [rbp-0x38],al
+    120a:	48 8b 45 b8          	mov    rax,QWORD PTR [rbp-0x48]
+    120e:	0f b6 40 66          	movzx  eax,BYTE PTR [rax+0x66]
+    1212:	88 45 c9             	mov    BYTE PTR [rbp-0x37],al
+    1215:	48 8b 45 b8          	mov    rax,QWORD PTR [rbp-0x48]
+    1219:	0f b6 40 08          	movzx  eax,BYTE PTR [rax+0x8]
+    121d:	88 45 ca             	mov    BYTE PTR [rbp-0x36],al
+    1220:	48 8b 45 b8          	mov    rax,QWORD PTR [rbp-0x48]
+    1224:	0f b6 80 bd 07 00 00 	movzx  eax,BYTE PTR [rax+0x7bd]
+    122b:	88 45 cb             	mov    BYTE PTR [rbp-0x35],al
+    122e:	48 8b 45 b8          	mov    rax,QWORD PTR [rbp-0x48]
+    1232:	0f b6 80 73 04 00 00 	movzx  eax,BYTE PTR [rax+0x473]
+    1239:	88 45 cc             	mov    BYTE PTR [rbp-0x34],al
+    123c:	48 8b 45 b8          	mov    rax,QWORD PTR [rbp-0x48]
+    1240:	0f b6 40 69          	movzx  eax,BYTE PTR [rax+0x69]
+    1244:	88 45 cd             	mov    BYTE PTR [rbp-0x33],al
+    1247:	48 8b 45 b8          	mov    rax,QWORD PTR [rbp-0x48]
+    124b:	0f b6 40 62          	movzx  eax,BYTE PTR [rax+0x62]
+    124f:	88 45 ce             	mov    BYTE PTR [rbp-0x32],al
+    1252:	48 8b 45 b8          	mov    rax,QWORD PTR [rbp-0x48]
+    1256:	0f b6 80 73 04 00 00 	movzx  eax,BYTE PTR [rax+0x473]
+    125d:	88 45 cf             	mov    BYTE PTR [rbp-0x31],al
+    1260:	48 8b 45 b8          	mov    rax,QWORD PTR [rbp-0x48]
+    1264:	0f b6 40 0c          	movzx  eax,BYTE PTR [rax+0xc]
+    1268:	88 45 d0             	mov    BYTE PTR [rbp-0x30],al
+    126b:	48 8b 45 b8          	mov    rax,QWORD PTR [rbp-0x48]
+    126f:	0f b6 40 65          	movzx  eax,BYTE PTR [rax+0x65]
+    1273:	88 45 d1             	mov    BYTE PTR [rbp-0x2f],al
+    1276:	48 8b 45 b8          	mov    rax,QWORD PTR [rbp-0x48]
+    127a:	0f b6 80 84 00 00 00 	movzx  eax,BYTE PTR [rax+0x84]
+    1281:	88 45 d2             	mov    BYTE PTR [rbp-0x2e],al
+    1284:	48 8b 45 b8          	mov    rax,QWORD PTR [rbp-0x48]
+    1288:	0f b6 40 09          	movzx  eax,BYTE PTR [rax+0x9]
+    128c:	88 45 d3             	mov    BYTE PTR [rbp-0x2d],al
+    128f:	48 8b 45 b8          	mov    rax,QWORD PTR [rbp-0x48]
+    1293:	0f b6 40 32          	movzx  eax,BYTE PTR [rax+0x32]
+    1297:	88 45 d4             	mov    BYTE PTR [rbp-0x2c],al
+    129a:	48 8b 45 b8          	mov    rax,QWORD PTR [rbp-0x48]
+    129e:	0f b6 80 73 04 00 00 	movzx  eax,BYTE PTR [rax+0x473]
+    12a5:	88 45 d5             	mov    BYTE PTR [rbp-0x2b],al
+    12a8:	48 8b 45 b8          	mov    rax,QWORD PTR [rbp-0x48]
+    12ac:	0f b6 40 24          	movzx  eax,BYTE PTR [rax+0x24]
+    12b0:	88 45 d6             	mov    BYTE PTR [rbp-0x2a],al
+    12b3:	48 8b 45 b8          	mov    rax,QWORD PTR [rbp-0x48]
+    12b7:	0f b6 80 85 00 00 00 	movzx  eax,BYTE PTR [rax+0x85]
+    12be:	88 45 d7             	mov    BYTE PTR [rbp-0x29],al
+    12c1:	48 8b 45 b8          	mov    rax,QWORD PTR [rbp-0x48]
+    12c5:	0f b6 40 65          	movzx  eax,BYTE PTR [rax+0x65]
+    12c9:	88 45 d8             	mov    BYTE PTR [rbp-0x28],al
+    12cc:	48 8b 45 b8          	mov    rax,QWORD PTR [rbp-0x48]
+    12d0:	0f b6 40 1e          	movzx  eax,BYTE PTR [rax+0x1e]
+    12d4:	88 45 d9             	mov    BYTE PTR [rbp-0x27],al
+    12d7:	48 8b 45 b8          	mov    rax,QWORD PTR [rbp-0x48]
+    12db:	0f b6 80 73 04 00 00 	movzx  eax,BYTE PTR [rax+0x473]
+    12e2:	88 45 da             	mov    BYTE PTR [rbp-0x26],al
+    12e5:	48 8b 45 b8          	mov    rax,QWORD PTR [rbp-0x48]
+    12e9:	0f b6 80 bd 07 00 00 	movzx  eax,BYTE PTR [rax+0x7bd]
+    12f0:	88 45 db             	mov    BYTE PTR [rbp-0x25],al
+    12f3:	48 8b 45 b8          	mov    rax,QWORD PTR [rbp-0x48]
+    12f7:	0f b6 40 62          	movzx  eax,BYTE PTR [rax+0x62]
+    12fb:	88 45 dc             	mov    BYTE PTR [rbp-0x24],al
+    12fe:	48 8b 45 b8          	mov    rax,QWORD PTR [rbp-0x48]
+    1302:	0f b6 40 09          	movzx  eax,BYTE PTR [rax+0x9]
+    1306:	88 45 dd             	mov    BYTE PTR [rbp-0x23],al
+    1309:	48 8b 45 b8          	mov    rax,QWORD PTR [rbp-0x48]
+    130d:	0f b6 80 73 04 00 00 	movzx  eax,BYTE PTR [rax+0x473]
+    1314:	88 45 de             	mov    BYTE PTR [rbp-0x22],al
+    1317:	48 8b 45 b8          	mov    rax,QWORD PTR [rbp-0x48]
+    131b:	0f b6 80 85 00 00 00 	movzx  eax,BYTE PTR [rax+0x85]
+    1322:	88 45 df             	mov    BYTE PTR [rbp-0x21],al
+    1325:	48 8b 45 b8          	mov    rax,QWORD PTR [rbp-0x48]
+    1329:	0f b6 40 66          	movzx  eax,BYTE PTR [rax+0x66]
+    132d:	88 45 e0             	mov    BYTE PTR [rbp-0x20],al
+    1330:	48 8b 45 b8          	mov    rax,QWORD PTR [rbp-0x48]
+    1334:	0f b6 80 8a 00 00 00 	movzx  eax,BYTE PTR [rax+0x8a]
+    133b:	88 45 e1             	mov    BYTE PTR [rbp-0x1f],al
+    133e:	48 8b 45 b8          	mov    rax,QWORD PTR [rbp-0x48]
+    1342:	0f b6 40 65          	movzx  eax,BYTE PTR [rax+0x65]
+    1346:	88 45 e2             	mov    BYTE PTR [rbp-0x1e],al
+    1349:	48 8b 45 b8          	mov    rax,QWORD PTR [rbp-0x48]
+    134d:	0f b6 80 73 04 00 00 	movzx  eax,BYTE PTR [rax+0x473]
+    1354:	88 45 e3             	mov    BYTE PTR [rbp-0x1d],al
+    1357:	48 8b 45 b8          	mov    rax,QWORD PTR [rbp-0x48]
+    135b:	0f b6 40 24          	movzx  eax,BYTE PTR [rax+0x24]
+    135f:	88 45 e4             	mov    BYTE PTR [rbp-0x1c],al
+    1362:	48 8b 45 b8          	mov    rax,QWORD PTR [rbp-0x48]
+    1366:	0f b6 80 85 00 00 00 	movzx  eax,BYTE PTR [rax+0x85]
+    136d:	88 45 e5             	mov    BYTE PTR [rbp-0x1b],al
+    1370:	48 8b 45 b8          	mov    rax,QWORD PTR [rbp-0x48]
+    1374:	0f b6 40 62          	movzx  eax,BYTE PTR [rax+0x62]
+    1378:	88 45 e6             	mov    BYTE PTR [rbp-0x1a],al
+    137b:	48 8b 45 b8          	mov    rax,QWORD PTR [rbp-0x48]
+    137f:	0f b6 40 0e          	movzx  eax,BYTE PTR [rax+0xe]
+    1383:	88 45 e7             	mov    BYTE PTR [rbp-0x19],al
+    1386:	48 8b 45 b8          	mov    rax,QWORD PTR [rbp-0x48]
+    138a:	0f b6 40 65          	movzx  eax,BYTE PTR [rax+0x65]
+    138e:	88 45 e8             	mov    BYTE PTR [rbp-0x18],al
+    1391:	48 8b 45 b8          	mov    rax,QWORD PTR [rbp-0x48]
+    1395:	0f b6 80 73 04 00 00 	movzx  eax,BYTE PTR [rax+0x473]
+    139c:	88 45 e9             	mov    BYTE PTR [rbp-0x17],al
+    139f:	48 8b 45 b8          	mov    rax,QWORD PTR [rbp-0x48]
+    13a3:	0f b6 40 1c          	movzx  eax,BYTE PTR [rax+0x1c]
+    13a7:	88 45 ea             	mov    BYTE PTR [rbp-0x16],al
+    13aa:	48 8b 45 b8          	mov    rax,QWORD PTR [rbp-0x48]
+    13ae:	0f b6 40 62          	movzx  eax,BYTE PTR [rax+0x62]
+    13b2:	88 45 eb             	mov    BYTE PTR [rbp-0x15],al
+    13b5:	48 8b 45 b8          	mov    rax,QWORD PTR [rbp-0x48]
+    13b9:	0f b6 40 0c          	movzx  eax,BYTE PTR [rax+0xc]
+    13bd:	88 45 ec             	mov    BYTE PTR [rbp-0x14],al
+    13c0:	48 8b 45 b8          	mov    rax,QWORD PTR [rbp-0x48]
+    13c4:	0f b6 40 65          	movzx  eax,BYTE PTR [rax+0x65]
+    13c8:	88 45 ed             	mov    BYTE PTR [rbp-0x13],al
+    13cb:	48 8b 45 b8          	mov    rax,QWORD PTR [rbp-0x48]
+    13cf:	0f b6 80 7c 03 00 00 	movzx  eax,BYTE PTR [rax+0x37c]
+    13d6:	88 45 ee             	mov    BYTE PTR [rbp-0x12],al
+    13d9:	c6 45 ef 00          	mov    BYTE PTR [rbp-0x11],0x0
+    13dd:	48 8d 45 c0          	lea    rax,[rbp-0x40]
+    13e1:	48 89 c6             	mov    rsi,rax
+    13e4:	48 8d 05 b5 19 00 00 	lea    rax,[rip+0x19b5]        # 2da0 <_IO_stdin_used+0xda0>
+    13eb:	48 89 c7             	mov    rdi,rax
+    13ee:	b8 00 00 00 00       	mov    eax,0x0
+    13f3:	e8 78 fc ff ff       	call   1070 <printf@plt>
+    13f8:	b8 00 00 00 00       	mov    eax,0x0
+    13fd:	48 8b 55 f8          	mov    rdx,QWORD PTR [rbp-0x8]
+    1401:	64 48 2b 14 25 28 00 	sub    rdx,QWORD PTR fs:0x28
+    1408:	00 00
+    140a:	74 05                	je     1411 <main+0x2a8>
+    140c:	e8 4f fc ff ff       	call   1060 <__stack_chk_fail@plt>
+    1411:	c9                   	leave
+    1412:	c3                   	ret
+
+Disassembly of section .fini:
+
+0000000000001414 <_fini>:
+    1414:	f3 0f 1e fa          	endbr64
+    1418:	48 83 ec 08          	sub    rsp,0x8
+    141c:	48 83 c4 08          	add    rsp,0x8
+    1420:	c3                   	ret
