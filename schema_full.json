@@ -1,0 +1,412 @@
+{
+  "data": {
+    "__schema": {
+      "types": [
+        {
+          "fields": [
+            {
+              "name": "args"
+            },
+            {
+              "name": "description"
+            },
+            {
+              "name": "isRepeatable"
+            },
+            {
+              "name": "locations"
+            },
+            {
+              "name": "name"
+            }
+          ],
+          "name": "__Directive"
+        },
+        {
+          "fields": null,
+          "name": "__DirectiveLocation"
+        },
+        {
+          "fields": [
+            {
+              "name": "deprecationReason"
+            },
+            {
+              "name": "description"
+            },
+            {
+              "name": "isDeprecated"
+            },
+            {
+              "name": "name"
+            }
+          ],
+          "name": "__EnumValue"
+        },
+        {
+          "fields": [
+            {
+              "name": "args"
+            },
+            {
+              "name": "deprecationReason"
+            },
+            {
+              "name": "description"
+            },
+            {
+              "name": "isDeprecated"
+            },
+            {
+              "name": "name"
+            },
+            {
+              "name": "type"
+            }
+          ],
+          "name": "__Field"
+        },
+        {
+          "fields": [
+            {
+              "name": "defaultValue"
+            },
+            {
+              "name": "deprecationReason"
+            },
+            {
+              "name": "description"
+            },
+            {
+              "name": "isDeprecated"
+            },
+            {
+              "name": "name"
+            },
+            {
+              "name": "type"
+            }
+          ],
+          "name": "__InputValue"
+        },
+        {
+          "fields": [
+            {
+              "name": "description"
+            },
+            {
+              "name": "directives"
+            },
+            {
+              "name": "mutationType"
+            },
+            {
+              "name": "queryType"
+            },
+            {
+              "name": "subscriptionType"
+            },
+            {
+              "name": "types"
+            }
+          ],
+          "name": "__Schema"
+        },
+        {
+          "fields": [
+            {
+              "name": "description"
+            },
+            {
+              "name": "enumValues"
+            },
+            {
+              "name": "fields"
+            },
+            {
+              "name": "inputFields"
+            },
+            {
+              "name": "interfaces"
+            },
+            {
+              "name": "kind"
+            },
+            {
+              "name": "name"
+            },
+            {
+              "name": "ofType"
+            },
+            {
+              "name": "possibleTypes"
+            }
+          ],
+          "name": "__Type"
+        },
+        {
+          "fields": null,
+          "name": "__TypeKind"
+        },
+        {
+          "fields": null,
+          "name": "Boolean"
+        },
+        {
+          "fields": null,
+          "name": "ID"
+        },
+        {
+          "fields": null,
+          "name": "Int"
+        },
+        {
+          "fields": [
+            {
+              "name": "aiEnhanced"
+            },
+            {
+              "name": "body"
+            },
+            {
+              "name": "id"
+            },
+            {
+              "name": "insertedAt"
+            },
+            {
+              "name": "read"
+            },
+            {
+              "name": "recipient"
+            },
+            {
+              "name": "sender"
+            },
+            {
+              "name": "subject"
+            }
+          ],
+          "name": "Message"
+        },
+        {
+          "fields": [
+            {
+              "name": "createNewsPost"
+            },
+            {
+              "name": "createSsoConfiguration"
+            },
+            {
+              "name": "createUser"
+            },
+            {
+              "name": "deleteMessage"
+            },
+            {
+              "name": "deleteNewsPost"
+            },
+            {
+              "name": "deleteSsoConfiguration"
+            },
+            {
+              "name": "deleteUser"
+            },
+            {
+              "name": "getUserCredentials"
+            },
+            {
+              "name": "login"
+            },
+            {
+              "name": "markMessageRead"
+            },
+            {
+              "name": "sendMessage"
+            },
+            {
+              "name": "updateNewsPost"
+            },
+            {
+              "name": "updateProfile"
+            },
+            {
+              "name": "updateSsoConfiguration"
+            },
+            {
+              "name": "updateUser"
+            }
+          ],
+          "name": "RootMutationType"
+        },
+        {
+          "fields": [
+            {
+              "name": "aiModerated"
+            },
+            {
+              "name": "author"
+            },
+            {
+              "name": "content"
+            },
+            {
+              "name": "id"
+            },
+            {
+              "name": "insertedAt"
+            },
+            {
+              "name": "published"
+            },
+            {
+              "name": "title"
+            }
+          ],
+          "name": "NewsPost"
+        },
+        {
+          "fields": [
+            {
+              "name": "enabledSsoConfigurations"
+            },
+            {
+              "name": "me"
+            },
+            {
+              "name": "messages"
+            },
+            {
+              "name": "newsFeed"
+            },
+            {
+              "name": "replySuggestions"
+            },
+            {
+              "name": "sentMessages"
+            },
+            {
+              "name": "ssoConfiguration"
+            },
+            {
+              "name": "ssoConfigurations"
+            },
+            {
+              "name": "user"
+            },
+            {
+              "name": "users"
+            }
+          ],
+          "name": "RootQueryType"
+        },
+        {
+          "fields": [
+            {
+              "name": "token"
+            },
+            {
+              "name": "user"
+            }
+          ],
+          "name": "Session"
+        },
+        {
+          "fields": [
+            {
+              "name": "clientId"
+            },
+            {
+              "name": "domain"
+            },
+            {
+              "name": "enabled"
+            },
+            {
+              "name": "id"
+            },
+            {
+              "name": "insertedAt"
+            },
+            {
+              "name": "name"
+            },
+            {
+              "name": "provider"
+            },
+            {
+              "name": "updatedAt"
+            }
+          ],
+          "name": "SsoConfiguration"
+        },
+        {
+          "fields": null,
+          "name": "String"
+        },
+        {
+          "fields": [
+            {
+              "name": "members"
+            },
+            {
+              "name": "name"
+            }
+          ],
+          "name": "SubOrganization"
+        },
+        {
+          "fields": [
+            {
+              "name": "newMessage"
+            },
+            {
+              "name": "newNewsPost"
+            }
+          ],
+          "name": "RootSubscriptionType"
+        },
+        {
+          "fields": [
+            {
+              "name": "email"
+            },
+            {
+              "name": "id"
+            },
+            {
+              "name": "insertedAt"
+            },
+            {
+              "name": "name"
+            },
+            {
+              "name": "role"
+            },
+            {
+              "name": "subOrganization"
+            }
+          ],
+          "name": "User"
+        },
+        {
+          "fields": [
+            {
+              "name": "email"
+            },
+            {
+              "name": "id"
+            },
+            {
+              "name": "passwordHash"
+            },
+            {
+              "name": "passwordLength"
+            }
+          ],
+          "name": "UserCredentials"
+        }
+      ]
+    }
+  }
+}
