@@ -1,0 +1,87 @@
+{
+  "data": {
+    "__schema": {
+      "queryType": {
+        "fields": [
+          {
+            "args": [],
+            "name": "enabledSsoConfigurations"
+          },
+          {
+            "args": [],
+            "name": "me"
+          },
+          {
+            "args": [],
+            "name": "messages"
+          },
+          {
+            "args": [],
+            "name": "newsFeed"
+          },
+          {
+            "args": [
+              {
+                "name": "messageId",
+                "type": {
+                  "kind": "NON_NULL",
+                  "name": null,
+                  "ofType": {
+                    "kind": "SCALAR",
+                    "name": "ID"
+                  }
+                }
+              }
+            ],
+            "name": "replySuggestions"
+          },
+          {
+            "args": [],
+            "name": "sentMessages"
+          },
+          {
+            "args": [
+              {
+                "name": "id",
+                "type": {
+                  "kind": "NON_NULL",
+                  "name": null,
+                  "ofType": {
+                    "kind": "SCALAR",
+                    "name": "ID"
+                  }
+                }
+              }
+            ],
+            "name": "ssoConfiguration"
+          },
+          {
+            "args": [],
+            "name": "ssoConfigurations"
+          },
+          {
+            "args": [
+              {
+                "name": "id",
+                "type": {
+                  "kind": "NON_NULL",
+                  "name": null,
+                  "ofType": {
+                    "kind": "SCALAR",
+                    "name": "ID"
+                  }
+                }
+              }
+            ],
+            "name": "user"
+          },
+          {
+            "args": [],
+            "name": "users"
+          }
+        ],
+        "name": "RootQueryType"
+      }
+    }
+  }
+}
