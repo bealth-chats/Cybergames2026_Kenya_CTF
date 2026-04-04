@@ -1,0 +1,50 @@
+execve("/usr/bin/qemu-aarch64-static", ["qemu-aarch64-static", "-L", "/usr/aarch64-linux-gnu", "./less"], 0x7ffe2da97048 /* 37 vars */) = 0
+brk(NULL)                               = 0x5555570fd000
+brk(0x5555570fde40)                     = 0x5555570fde40
+arch_prctl(ARCH_SET_FS, 0x5555570fd4c0) = 0
+set_tid_address(0x5555570fd790)         = 33393
+set_robust_list(0x5555570fd7a0, 24)     = 0
+rseq(0x5555570fdde0, 0x20, 0, 0x53053053) = 0
+prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+readlinkat(AT_FDCWD, "/proc/self/exe", "/usr/bin/qemu-aarch64-static", 4096) = 28
+getrandom("\xed\xbd\x0c\xf1\x48\x55\x8f\x6f", 8, GRND_NONBLOCK) = 8
+brk(NULL)                               = 0x5555570fde40
+brk(0x55555711ee40)                     = 0x55555711ee40
+brk(0x55555711f000)                     = 0x55555711f000
+mprotect(0x7f1d0c741000, 180224, PROT_READ) = 0
+rt_sigprocmask(SIG_SETMASK, ~[ILL FPE SEGV RTMIN RT_1], [], 8) = 0
+rt_sigaction(SIGRT_1, {sa_handler=0x7f1d0c5cd8d0, sa_mask=[], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART|SA_SIGINFO, sa_restorer=0x7f1d0c541b20}, NULL, 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [RTMIN RT_1], NULL, 8) = 0
+mmap(NULL, 8392704, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7f1d0b800000
+mprotect(0x7f1d0b801000, 8388608, PROT_READ|PROT_WRITE) = 0
+rt_sigprocmask(SIG_BLOCK, ~[], ~[ILL FPE KILL SEGV STOP RTMIN RT_1], 8) = 0
+clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0x7f1d0c000990, parent_tid=0x7f1d0c000990, exit_signal=0, stack=0x7f1d0b800000, stack_size=0x800200, tls=0x7f1d0c0006c0} => {parent_tid=[33394]}, 88) = 33394
+rt_sigprocmask(SIG_SETMASK, ~[ILL FPE KILL SEGV STOP RTMIN RT_1], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+uname({sysname="Linux", nodename="devbox", ...}) = 0
+openat(AT_FDCWD, "./less", O_RDONLY)    = 3
+getcwd("/app", 1024)                    = 5
+readlink("/app/less", 0x7ffec4b1c9b0, 1023) = -1 EINVAL (Invalid argument)
+lseek(3, 0, SEEK_SET)                   = 0
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0@\327\2\0\0\0\0\0"..., 64) = 64
+lseek(3, 0, SEEK_SET)                   = 0
+mmap(NULL, 528384, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f1d0c156000
+sysinfo({uptime=612, loads=[5184, 10400, 6272], totalram=8345718784, freeram=7027879936, sharedram=536576, bufferram=16662528, totalswap=0, freeswap=0, procs=113, totalhigh=0, freehigh=0, mem_unit=1}) = 0
+mmap(NULL, 134217728, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f1cfc000000
+madvise(0x7f1cfc000000, 134217728, MADV_HUGEPAGE) = 0
+mprotect(0x7f1cfc000000, 134213632, PROT_READ|PROT_WRITE|PROT_EXEC) = 0
+brk(0x555557145000)                     = 0x555557145000
+brk(0x555557166000)                     = 0x555557166000
+brk(0x555557188000)                     = 0x555557188000
+brk(0x555557187000)                     = 0x555557187000
+getrandom(NULL, 0, 0)                   = 0
+openat(AT_FDCWD, "/proc/sys/vm/mmap_min_addr", O_RDONLY) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+read(4, "65536\n", 1024)                = 6
+close(4)                                = 0
+gettid()                                = 33393
+fstat(3, {st_mode=S_IFREG|0664, st_size=3283072, ...}) = 0
+fstat(1, {st_mode=S_IFREG|0664, st_size=0, ...}) = 0
+exit_group(1)                           = ?
++++ exited with 1 +++
