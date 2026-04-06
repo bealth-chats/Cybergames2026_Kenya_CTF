@@ -1,0 +1,1131 @@
+407665 brk(NULL) = 0x00007f4b3f132000
+407665 mmap(NULL,8192,PROT_READ|PROT_WRITE,MAP_PRIVATE|MAP_ANONYMOUS,-1,0) = 0x0000400000864000
+407665 openat(AT_FDCWD,"/app/fake.so",O_RDONLY|O_CLOEXEC) = -1 errno=2 (No such file or directory)
+407665 writev(2,0x4000007fe020,0x7)ERROR: ld.so: object '/app/fake.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ = 115
+407665 faccessat(AT_FDCWD,"/etc/ld.so.preload",R_OK,0) = -1 errno=2 (No such file or directory)
+407665 openat(AT_FDCWD,"/etc/ld.so.cache",O_RDONLY|O_CLOEXEC) = 3
+407665 fstat(3,0x00004000007fef10) = 0
+407665 mmap(NULL,47975,PROT_READ,MAP_PRIVATE,3,0) = 0x0000400000866000
+407665 close(3) = 0
+407665 openat(AT_FDCWD,"/lib/aarch64-linux-gnu/libgcc_s.so.1",O_RDONLY|O_CLOEXEC) = -1 errno=2 (No such file or directory)
+407665 newfstatat(AT_FDCWD,"/lib/aarch64-linux-gnu/",0x00004000007fef50,0) = 0
+407665 openat(AT_FDCWD,"/usr/lib/aarch64-linux-gnu/libgcc_s.so.1",O_RDONLY|O_CLOEXEC) = -1 errno=2 (No such file or directory)
+407665 newfstatat(AT_FDCWD,"/usr/lib/aarch64-linux-gnu/",0x00004000007fef50,0) = 0
+407665 openat(AT_FDCWD,"/lib/libgcc_s.so.1",O_RDONLY|O_CLOEXEC) = 3
+407665 read(3,0x7ff0c0,832) = 832
+407665 fstat(3,0x00004000007fef50) = 0
+407665 mmap(NULL,263104,PROT_NONE,MAP_PRIVATE|MAP_ANONYMOUS|MAP_DENYWRITE,-1,0) = 0x0000400000872000
+407665 mmap(0x0000400000880000,197568,PROT_EXEC|PROT_READ,MAP_PRIVATE|MAP_DENYWRITE|MAP_FIXED,3,0) = 0x0000400000880000
+407665 munmap(0x0000400000872000,57344) = 0
+407665 munmap(0x00004000008b1000,5056) = 0
+407665 mprotect(0x000040000089f000,65536,PROT_NONE) = 0
+407665 mmap(0x00004000008af000,8192,PROT_READ|PROT_WRITE,MAP_PRIVATE|MAP_DENYWRITE|MAP_FIXED,3,0x1f000) = 0x00004000008af000
+407665 close(3) = 0
+407665 openat(AT_FDCWD,"/lib/aarch64-linux-gnu/libc.so.6",O_RDONLY|O_CLOEXEC) = -1 errno=2 (No such file or directory)
+407665 openat(AT_FDCWD,"/usr/lib/aarch64-linux-gnu/libc.so.6",O_RDONLY|O_CLOEXEC) = -1 errno=2 (No such file or directory)
+407665 openat(AT_FDCWD,"/lib/libc.so.6",O_RDONLY|O_CLOEXEC) = 3
+407665 read(3,0x7ff0a0,832) = 832
+407665 fstat(3,0x00004000007fef30) = 0
+407665 mmap(NULL,1892224,PROT_NONE,MAP_PRIVATE|MAP_ANONYMOUS|MAP_DENYWRITE,-1,0) = 0x00004000008b3000
+407665 mmap(0x00004000008c0000,1826688,PROT_EXEC|PROT_READ,MAP_PRIVATE|MAP_DENYWRITE|MAP_FIXED,3,0) = 0x00004000008c0000
+407665 munmap(0x00004000008b3000,53248) = 0
+407665 munmap(0x0000400000a7e000,12160) = 0
+407665 mprotect(0x0000400000a5a000,77824,PROT_NONE) = 0
+407665 mmap(0x0000400000a6d000,20480,PROT_READ|PROT_WRITE,MAP_PRIVATE|MAP_DENYWRITE|MAP_FIXED,3,0x19d000) = 0x0000400000a6d000
+407665 mmap(0x0000400000a72000,49024,PROT_READ|PROT_WRITE,MAP_PRIVATE|MAP_ANONYMOUS|MAP_FIXED,-1,0) = 0x0000400000a72000
+407665 close(3) = 0
+407665 mmap(NULL,8192,PROT_READ|PROT_WRITE,MAP_PRIVATE|MAP_ANONYMOUS,-1,0) = 0x0000400000a81000
+407665 set_tid_address(0x400000a810f0) = 407665
+407665 set_robust_list(0x400000a81100,24) = -1 errno=38 (Function not implemented)
+407665 Unknown syscall 293
+407665 mprotect(0x0000400000a6d000,12288,PROT_READ) = 0
+407665 mprotect(0x00004000008af000,4096,PROT_READ) = 0
+407665 mprotect(0x00007f4b3f118000,98304,PROT_READ) = 0
+407665 mprotect(0x000040000084e000,8192,PROT_READ) = 0
+407665 prlimit64(0,RLIMIT_STACK,NULL,0x00004000007ffab8) = 0 ({rlim_cur=8388608,rlim_max=-1})
+407665 munmap(0x0000400000866000,47975) = 0
+407665 ppoll(0x4000007ffcb0,3,0x4000007ffc60,(nil)) = 0
+407665 rt_sigaction(SIGPIPE,0x00004000007ffa18,0x00004000007ffab0) = 0
+407665 getrandom(0x400000a766f8,8,1) = 8
+407665 brk(NULL) = 0x00007f4b3f132000
+407665 brk(0x00007f4b3f153000) = 0x00007f4b3f153000
+407665 openat(AT_FDCWD,"/proc/self/maps",O_RDONLY|O_CLOEXEC) = 3
+407665 prlimit64(0,RLIMIT_STACK,NULL,0x00004000007ffc38) = 0 ({rlim_cur=8388608,rlim_max=-1})
+407665 fstat(3,0x00004000007ffa58) = 0
+407665 read(3,0x3f132500,4096) = 2214
+407665 close(3) = 0
+407665 sched_getaffinity(407665,32,0x7f4b3f132500) = 16
+407665 rt_sigaction(SIGSEGV,NULL,0x00004000007ffc00) = 0
+407665 sigaltstack((nil),0x4000007ffc10) = 0
+407665 mmap(NULL,20480,PROT_READ|PROT_WRITE,MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK,-1,0) = 0x0000400000a83000
+407665 mprotect(0x0000400000a83000,4096,PROT_NONE) = 0
+407665 sigaltstack(0x4000007ffc10,(nil)) = 0
+407665 gettid() = 407665
+407665 rt_sigaction(SIGSEGV,0x00004000007ffb68,NULL) = 0
+407665 rt_sigaction(SIGBUS,NULL,0x00004000007ffc00) = 0
+407665 rt_sigaction(SIGBUS,0x00004000007ffb68,NULL) = 0
+407665 openat(AT_FDCWD,"/proc/self/status",O_RDONLY|O_CLOEXEC) = 3
+407665 statx(3,"",AT_EMPTY_PATH|AT_STATX_SYNC_AS_STAT,STATX_ALL,0x00004000007ff590) = 0
+407665 read(3,0x7ff5f0,32) = 32
+407665 read(3,0x3f132940,32) = 32
+407665 read(3,0x3f132960,64) = 64
+407665 read(3,0x3f1329a0,128) = 128
+407665 read(3,0x3f132a20,256) = 256
+407665 read(3,0x3f132b20,512) = 512
+407665 read(3,0x3f132d20,1024) = 417
+407665 read(3,0x3f132ec1,607) = 0
+407665 close(3) = 0
+407665 openat(AT_FDCWD,"/sys/class/dmi/id/sys_vendor",O_RDONLY|O_CLOEXEC) = -1 errno=2 (No such file or directory)
+407665 openat(AT_FDCWD,"/sys/class/dmi/id/product_name",O_RDONLY|O_CLOEXEC) = -1 errno=2 (No such file or directory)
+407665 openat(AT_FDCWD,"/sys/class/dmi/id/product_version",O_RDONLY|O_CLOEXEC) = -1 errno=2 (No such file or directory)
+407665 openat(AT_FDCWD,"/sys/class/dmi/id/bios_vendor",O_RDONLY|O_CLOEXEC) = -1 errno=2 (No such file or directory)
+407665 openat(AT_FDCWD,"/dev/null",O_RDONLY|O_CLOEXEC) = 3
+407665 pipe2(0x4000007ff490,524288) = 0
+407665 pipe2(0x4000007ff490,524288) = 0
+407665 prlimit64(0,RLIMIT_NOFILE,NULL,0x00004000007ff448) = 0 ({rlim_cur=1024,rlim_max=1048576})
+407665 prlimit64(0,RLIMIT_NOFILE,NULL,0x00004000007ff448) = 0 ({rlim_cur=1024,rlim_max=1048576})
+407665 prlimit64(0,RLIMIT_NOFILE,NULL,0x00004000007ff448) = 0 ({rlim_cur=1024,rlim_max=1048576})
+407665 prlimit64(0,RLIMIT_NOFILE,NULL,0x00004000007ff448) = 0 ({rlim_cur=1024,rlim_max=1048576})
+407665 prlimit64(0,RLIMIT_NOFILE,NULL,0x00004000007ff448) = 0 ({rlim_cur=1024,rlim_max=1048576})
+407665 prlimit64(0,RLIMIT_NOFILE,NULL,0x00004000007ff448) = 0 ({rlim_cur=1024,rlim_max=1048576})
+407665 mmap(NULL,36864,PROT_READ|PROT_WRITE,MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK,-1,0) = 0x0000400000a88000
+407665 rt_sigprocmask(SIG_BLOCK,0x0000400000a248d0,0x00004000007ff338,8) = 0
+407665 Unknown syscall 435
+407665 clone(CLONE_VM|CLONE_VFORK|0x11,child_stack=0x0000400000a91000,parent_tidptr=0x0000000000000000,tls=0x0000000000000000,child_tidptr=0x0000000000000000) = 407667
+ = 0
+407665 munmap(0x0000400000a88000,36864) = 0
+407667 rt_sigprocmask(SIG_BLOCK,NULL,0x0000400000a90e90,8) = 0
+407665 rt_sigprocmask(SIG_SETMASK,0x00004000007ff338,NULL,8) = 0
+407667 rt_sigaction(SIGHUP,NULL,0x0000400000a90dd0) = 0
+407667 rt_sigaction(SIGINT,NULL,0x0000400000a90dd0) = 0
+407667 rt_sigaction(SIGQUIT,NULL,0x0000400000a90dd0) = 0
+407667 rt_sigaction(SIGILL,NULL,0x0000400000a90dd0) = 0
+407667 rt_sigaction(SIGTRAP,NULL,0x0000400000a90dd0) = 0
+407667 rt_sigaction(SIGIOT,NULL,0x0000400000a90dd0) = 0
+407667 rt_sigaction(SIGBUS,NULL,0x0000400000a90dd0) = 0
+407667 rt_sigaction(SIGBUS,0x0000400000a90d38,NULL) = 0
+407667 rt_sigaction(SIGFPE,NULL,0x0000400000a90dd0) = 0
+407667 rt_sigaction(SIGUSR1,NULL,0x0000400000a90dd0) = 0
+407667 rt_sigaction(SIGSEGV,NULL,0x0000400000a90dd0) = 0
+407667 rt_sigaction(SIGSEGV,0x0000400000a90d38,NULL) = 0
+407667 rt_sigaction(SIGUSR2,NULL,0x0000400000a90dd0) = 0
+407667 rt_sigaction(SIGPIPE,0x0000400000a90d38,NULL) = 0
+407667 rt_sigaction(SIGALRM,NULL,0x0000400000a90dd0) = 0
+407667 rt_sigaction(SIGTERM,NULL,0x0000400000a90dd0) = 0
+407667 rt_sigaction(SIGSTKFLT,NULL,0x0000400000a90dd0) = 0
+407667 rt_sigaction(SIGCHLD,NULL,0x0000400000a90dd0) = 0
+407667 rt_sigaction(SIGCONT,NULL,0x0000400000a90dd0) = 0
+407667 rt_sigaction(SIGTSTP,NULL,0x0000400000a90dd0) = 0
+407667 rt_sigaction(SIGTTIN,NULL,0x0000400000a90dd0) = 0
+407667 rt_sigaction(SIGTTOU,NULL,0x0000400000a90dd0) = 0
+407667 rt_sigaction(SIGURG,NULL,0x0000400000a90dd0) = 0
+407667 rt_sigaction(SIGXCPU,NULL,0x0000400000a90dd0) = 0
+407667 rt_sigaction(SIGXFSZ,NULL,0x0000400000a90dd0) = 0
+407667 rt_sigaction(SIGVTALRM,NULL,0x0000400000a90dd0) = 0
+407667 rt_sigaction(SIGPROF,NULL,0x0000400000a90dd0) = 0
+407667 rt_sigaction(SIGWINCH,NULL,0x0000400000a90dd0) = 0
+407667 rt_sigaction(SIGIO,NULL,0x0000400000a90dd0) = 0
+407667 rt_sigaction(SIGPWR,NULL,0x0000400000a90dd0) = 0
+407667 rt_sigaction(SIGSYS,NULL,0x0000400000a90dd0) = 0
+407667 rt_sigaction(32,0x0000400000a90d38,NULL) = 0
+407667 rt_sigaction(33,0x0000400000a90d38,NULL) = 0
+407667 rt_sigaction(34,NULL,0x0000400000a90dd0) = 0
+407667 rt_sigaction(35,NULL,0x0000400000a90dd0) = 0
+407667 rt_sigaction(36,NULL,0x0000400000a90dd0) = 0
+407667 rt_sigaction(37,NULL,0x0000400000a90dd0) = 0
+407667 rt_sigaction(38,NULL,0x0000400000a90dd0) = 0
+407667 rt_sigaction(39,NULL,0x0000400000a90dd0) = 0
+407667 rt_sigaction(40,NULL,0x0000400000a90dd0) = 0
+407667 rt_sigaction(41,NULL,0x0000400000a90dd0) = 0
+407667 rt_sigaction(42,NULL,0x0000400000a90dd0) = 0
+407667 rt_sigaction(43,NULL,0x0000400000a90dd0) = 0
+407667 rt_sigaction(44,NULL,0x0000400000a90dd0) = 0
+407667 rt_sigaction(45,NULL,0x0000400000a90dd0) = 0
+407667 rt_sigaction(46,NULL,0x0000400000a90dd0) = 0
+407667 rt_sigaction(47,NULL,0x0000400000a90dd0) = 0
+407667 rt_sigaction(48,NULL,0x0000400000a90dd0) = 0
+407667 rt_sigaction(49,NULL,0x0000400000a90dd0) = 0
+407667 rt_sigaction(50,NULL,0x0000400000a90dd0) = 0
+407667 rt_sigaction(51,NULL,0x0000400000a90dd0) = 0
+407667 rt_sigaction(52,NULL,0x0000400000a90dd0) = 0
+407667 rt_sigaction(53,NULL,0x0000400000a90dd0) = 0
+407667 rt_sigaction(54,NULL,0x0000400000a90dd0) = 0
+407667 rt_sigaction(55,NULL,0x0000400000a90dd0) = 0
+407667 rt_sigaction(56,NULL,0x0000400000a90dd0) = 0
+407667 rt_sigaction(57,NULL,0x0000400000a90dd0) = 0
+407667 rt_sigaction(58,NULL,0x0000400000a90dd0) = 0
+407667 rt_sigaction(59,NULL,0x0000400000a90dd0) = 0
+407667 rt_sigaction(60,NULL,0x0000400000a90dd0) = 0
+407667 rt_sigaction(61,NULL,0x0000400000a90dd0) = 0
+407665 close(3) = 0
+407665 close(5) = 0
+407665 close(7) = 0
+407665 ioctl(4,FIONBIO,1) = 0
+407665 ioctl(6,FIONBIO,1) = 0
+407667 dup3(3,0,0) = 0
+407665 ppoll(0x4000007ff7dc,2,(nil),(nil))407667 dup3(5,1,0) = 1
+407667 dup3(7,2,0) = 1
+407665 read(6,0x7ff6f0,32) = 32
+407665 read(6,0x3f132ae0,32) = 32
+407665 read(6,0x3f132b00,64) = 64
+407665 read(6,0x3f132b40,128) = 36
+407665 read(6,0x3f132b64,92) = -1 errno=11 (Resource temporarily unavailable)
+407665 ppoll(0x4000007ff7dc,2,(nil),(nil)) = 1
+407665 read(6,0x3f132b64,92) = 92
+407665 read(6,0x7ff6f0,32) = 32
+407665 read(6,0x3f132be0,224) = 224
+407665 read(6,0x3f132cc0,512) = 512
+407665 read(6,0x3f132ec0,1024) = 237
+407665 read(6,0x3f132fad,787) = 100
+407665 read(6,0x3f133011,687) = -1 errno=11 (Resource temporarily unavailable)
+407665 ppoll(0x4000007ff7dc,2,(nil),(nil)) = 1
+407665 read(6,0x3f133011,687) = 102
+407665 read(6,0x3f133077,585) = -1 errno=11 (Resource temporarily unavailable)
+407665 ppoll(0x4000007ff7dc,2,(nil),(nil)) = 1
+407665 read(6,0x3f133077,585) = 102
+407665 read(6,0x3f1330dd,483) = 49
+407665 read(6,0x3f13310e,434) = 49
+407665 read(6,0x3f13313f,385) = -1 errno=11 (Resource temporarily unavailable)
+407665 ppoll(0x4000007ff7dc,2,(nil),(nil)) = 1
+407665 read(6,0x3f13313f,385) = 137
+407665 read(6,0x3f1331c8,248) = 52
+407665 read(6,0x3f1331fc,196) = -1 errno=11 (Resource temporarily unavailable)
+407665 ppoll(0x4000007ff7dc,2,(nil),(nil)) = 1
+407665 read(6,0x3f1331fc,196) = 89
+407665 read(6,0x3f133255,107) = -1 errno=11 (Resource temporarily unavailable)
+407665 ppoll(0x4000007ff7dc,2,(nil),(nil)) = 1
+407665 read(6,0x3f133255,107) = 107
+407665 read(6,0x7ff6f0,32) = 32
+407665 read(6,0x3f1332e0,2016) = 34
+407665 read(6,0x3f133302,1982) = -1 errno=11 (Resource temporarily unavailable)
+407665 ppoll(0x4000007ff7dc,2,(nil),(nil)) = 1
+407665 read(6,0x3f133302,1982) = 84
+407665 read(6,0x3f133356,1898) = -1 errno=11 (Resource temporarily unavailable)
+407665 ppoll(0x4000007ff7dc,2,(nil),(nil)) = 1
+407665 read(6,0x3f133356,1898) = 89
+407665 read(6,0x3f1333af,1809) = 42
+407665 read(6,0x3f1333d9,1767) = 63
+407665 read(6,0x3f133418,1704) = 42
+407665 read(6,0x3f133442,1662) = -1 errno=11 (Resource temporarily unavailable)
+407665 ppoll(0x4000007ff7dc,2,(nil),(nil)) = 1
+407665 read(6,0x3f133442,1662) = 23
+407665 read(6,0x3f133459,1639) = -1 errno=11 (Resource temporarily unavailable)
+407665 ppoll(0x4000007ff7dc,2,(nil),(nil)) = 2
+407665 read(4,0x7ff6f0,32) = 0
+407665 ioctl(6,FIONBIO,0) = 0
+407665 read(6,0x3f133459,1639) = 0
+407665 close(6) = 0
+407665 close(4) = 0
+407665 wait4(407667,0x4000007ff8a0,0,(nil)) = 407667
+407665 openat(AT_FDCWD,"/dev/null",O_RDONLY|O_CLOEXEC) = 3
+407665 pipe2(0x4000007ff490,524288) = 0
+407665 pipe2(0x4000007ff490,524288) = 0
+407665 prlimit64(0,RLIMIT_NOFILE,NULL,0x00004000007ff448) = 0 ({rlim_cur=1024,rlim_max=1048576})
+407665 prlimit64(0,RLIMIT_NOFILE,NULL,0x00004000007ff448) = 0 ({rlim_cur=1024,rlim_max=1048576})
+407665 prlimit64(0,RLIMIT_NOFILE,NULL,0x00004000007ff448) = 0 ({rlim_cur=1024,rlim_max=1048576})
+407665 prlimit64(0,RLIMIT_NOFILE,NULL,0x00004000007ff448) = 0 ({rlim_cur=1024,rlim_max=1048576})
+407665 prlimit64(0,RLIMIT_NOFILE,NULL,0x00004000007ff448) = 0 ({rlim_cur=1024,rlim_max=1048576})
+407665 prlimit64(0,RLIMIT_NOFILE,NULL,0x00004000007ff448) = 0 ({rlim_cur=1024,rlim_max=1048576})
+407665 mmap(NULL,36864,PROT_READ|PROT_WRITE,MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK,-1,0) = 0x0000400000a91000
+407665 rt_sigprocmask(SIG_BLOCK,0x0000400000a248d0,0x00004000007ff338,8) = 0
+407665 Unknown syscall 435
+407665 clone(CLONE_VM|CLONE_VFORK|0x11,child_stack=0x0000400000a9a000,parent_tidptr=0x0000000000000000,tls=0x0000000000000000,child_tidptr=0x0000000000000000) = 407669
+ = 0
+407665 munmap(0x0000400000a91000,36864) = 0
+407665 rt_sigprocmask(SIG_SETMASK,0x00004000007ff338,NULL,8) = 0
+407669 rt_sigprocmask(SIG_BLOCK,NULL,0x0000400000a99e90,8) = 0
+407665 close(3) = 0
+407665 close(5)407669  = rt_sigaction(0SIGHUP,
+NULL,407665 0x0000400000a99dd0close(7)) = 0 =
+0
+407665 ioctl(4,FIONBIO,1)407669 rt_sigaction(SIGINT,NULL,0x0000400000a99dd0) = 0
+407669 rt_sigaction(SIGQUIT,NULL,0x0000400000a99dd0) = 0
+407669  = rt_sigaction(0SIGILL,
+NULL,0x0000400000a99dd0)407665  = ioctl(06,
+FIONBIO,407669 1rt_sigaction()SIGTRAP,NULL, = 0x0000400000a99dd00)
+ = 407665 0ppoll(0x4000007ff7dc,2,(nil),(nil))
+407669 rt_sigaction(SIGIOT,NULL,0x0000400000a99dd0) = 0
+407669 rt_sigaction(SIGBUS,NULL,0x0000400000a99dd0) = 0
+407669 rt_sigaction(SIGBUS,0x0000400000a99d38,NULL) = 0
+407669 rt_sigaction(SIGFPE,NULL,0x0000400000a99dd0) = 0
+407669 rt_sigaction(SIGUSR1,NULL,0x0000400000a99dd0) = 0
+407669 rt_sigaction(SIGSEGV,NULL,0x0000400000a99dd0) = 0
+407669 rt_sigaction(SIGSEGV,0x0000400000a99d38,NULL) = 0
+407669 rt_sigaction(SIGUSR2,NULL,0x0000400000a99dd0) = 0
+407669 rt_sigaction(SIGPIPE,0x0000400000a99d38,NULL) = 0
+407669 rt_sigaction(SIGALRM,NULL,0x0000400000a99dd0) = 0
+407669 rt_sigaction(SIGTERM,NULL,0x0000400000a99dd0) = 0
+407669 rt_sigaction(SIGSTKFLT,NULL,0x0000400000a99dd0) = 0
+407669 rt_sigaction(SIGCHLD,NULL,0x0000400000a99dd0) = 0
+407669 rt_sigaction(SIGCONT,NULL,0x0000400000a99dd0) = 0
+407669 rt_sigaction(SIGTSTP,NULL,0x0000400000a99dd0) = 0
+407669 rt_sigaction(SIGTTIN,NULL,0x0000400000a99dd0) = 0
+407669 rt_sigaction(SIGTTOU,NULL,0x0000400000a99dd0) = 0
+407669 rt_sigaction(SIGURG,NULL,0x0000400000a99dd0) = 0
+407669 rt_sigaction(SIGXCPU,NULL,0x0000400000a99dd0) = 0
+407669 rt_sigaction(SIGXFSZ,NULL,0x0000400000a99dd0) = 0
+407669 rt_sigaction(SIGVTALRM,NULL,0x0000400000a99dd0) = 0
+407669 rt_sigaction(SIGPROF,NULL,0x0000400000a99dd0) = 0
+407669 rt_sigaction(SIGWINCH,NULL,0x0000400000a99dd0) = 0
+407669 rt_sigaction(SIGIO,NULL,0x0000400000a99dd0) = 0
+407669 rt_sigaction(SIGPWR,NULL,0x0000400000a99dd0) = 0
+407669 rt_sigaction(SIGSYS,NULL,0x0000400000a99dd0) = 0
+407669 rt_sigaction(32,0x0000400000a99d38,NULL) = 0
+407669 rt_sigaction(33,0x0000400000a99d38,NULL) = 0
+407669 rt_sigaction(34,NULL,0x0000400000a99dd0) = 0
+407669 rt_sigaction(35,NULL,0x0000400000a99dd0) = 0
+407669 rt_sigaction(36,NULL,0x0000400000a99dd0) = 0
+407669 rt_sigaction(37,NULL,0x0000400000a99dd0) = 0
+407669 rt_sigaction(38,NULL,0x0000400000a99dd0) = 0
+407669 rt_sigaction(39,NULL,0x0000400000a99dd0) = 0
+407669 rt_sigaction(40,NULL,0x0000400000a99dd0) = 0
+407669 rt_sigaction(41,NULL,0x0000400000a99dd0) = 0
+407669 rt_sigaction(42,NULL,0x0000400000a99dd0) = 0
+407669 rt_sigaction(43,NULL,0x0000400000a99dd0) = 0
+407669 rt_sigaction(44,NULL,0x0000400000a99dd0) = 0
+407669 rt_sigaction(45,NULL,0x0000400000a99dd0) = 0
+407669 rt_sigaction(46,NULL,0x0000400000a99dd0) = 0
+407669 rt_sigaction(47,NULL,0x0000400000a99dd0) = 0
+407669 rt_sigaction(48,NULL,0x0000400000a99dd0) = 0
+407669 rt_sigaction(49,NULL,0x0000400000a99dd0) = 0
+407669 rt_sigaction(50,NULL,0x0000400000a99dd0) = 0
+407669 rt_sigaction(51,NULL,0x0000400000a99dd0) = 0
+407669 rt_sigaction(52,NULL,0x0000400000a99dd0) = 0
+407669 rt_sigaction(53,NULL,0x0000400000a99dd0) = 0
+407669 rt_sigaction(54,NULL,0x0000400000a99dd0) = 0
+407669 rt_sigaction(55,NULL,0x0000400000a99dd0) = 0
+407669 rt_sigaction(56,NULL,0x0000400000a99dd0) = 0
+407669 rt_sigaction(57,NULL,0x0000400000a99dd0) = 0
+407669 rt_sigaction(58,NULL,0x0000400000a99dd0) = 0
+407669 rt_sigaction(59,NULL,0x0000400000a99dd0) = 0
+407669 rt_sigaction(60,NULL,0x0000400000a99dd0) = 0
+407669 rt_sigaction(61,NULL,0x0000400000a99dd0) = 0
+407669 dup3(3,0,0) = 0
+407669 dup3(5,1,0) = 1
+407669 dup3(7,2,0) = 1
+407665 read(6,0x7ff6f0,32) = 32
+407665 read(6,0x3f132b30,32) = 32
+407665 read(6,0x3f132b50,64) = 6
+407665 read(6,0x3f132b56,58) = -1 errno=11 (Resource temporarily unavailable)
+407665 ppoll(0x4000007ff7dc,2,(nil),(nil)) = 1
+407665 read(6,0x3f132b56,58) = 58
+407665 read(6,0x7ff6f0,32) = 32
+407665 read(6,0x3f132bb0,96) = 4
+407665 read(6,0x3f132bb4,92) = -1 errno=11 (Resource temporarily unavailable)
+407665 ppoll(0x4000007ff7dc,2,(nil),(nil)) = 1
+407665 read(6,0x3f132bb4,92) = 81
+407665 read(6,0x3f132c05,11) = -1 errno=11 (Resource temporarily unavailable)
+407665 ppoll(0x4000007ff7dc,2,(nil),(nil)) = 1
+407665 read(6,0x7ff6f0,32) = 32
+407665 read(6,0x3f132c25,235) = 10
+407665 read(6,0x3f132c2f,225) = 7
+407665 read(6,0x3f132c36,218) = 55
+407665 read(6,0x3f132c6d,163) = -1 errno=11 (Resource temporarily unavailable)
+407665 ppoll(0x4000007ff7dc,2,(nil),(nil)) = 1
+407665 read(6,0x3f132c6d,163) = 102
+407665 read(6,0x3f132cd3,61) = 61
+407665 read(6,0x7ff6f0,32) = 32
+407665 read(6,0x3f132d30,480) = 58
+407665 read(6,0x3f132d6a,422) = 47
+407665 read(6,0x3f132d99,375) = -1 errno=11 (Resource temporarily unavailable)
+407665 ppoll(0x4000007ff7dc,2,(nil),(nil)) = 1
+407665 read(6,0x3f132d99,375) = 95
+407665 read(6,0x3f132df8,280) = -1 errno=11 (Resource temporarily unavailable)
+407665 ppoll(0x4000007ff7dc,2,(nil),(nil)) = 1
+407665 read(6,0x3f132df8,280) = 121
+407665 read(6,0x3f132e71,159) = 99
+407665 read(6,0x3f132ed4,60) = 12
+407665 read(6,0x3f132ee0,48) = 42
+407665 read(6,0x3f132f0a,6) = -1 errno=11 (Resource temporarily unavailable)
+407665 ppoll(0x4000007ff7dc,2,(nil),(nil)) = 1
+407665 read(6,0x7ff6f0,32) = 32
+407665 read(6,0x3f132f2a,998) = 211
+407665 read(6,0x3f132ffd,787) = -1 errno=11 (Resource temporarily unavailable)
+407665 ppoll(0x4000007ff7dc,2,(nil),(nil)) = 1
+407665 read(6,0x3f132ffd,787) = 100
+407665 read(6,0x3f133061,687) = -1 errno=11 (Resource temporarily unavailable)
+407665 ppoll(0x4000007ff7dc,2,(nil),(nil)) = 1
+407665 read(6,0x3f133061,687) = 102
+407665 read(6,0x3f1330c7,585) = -1 errno=11 (Resource temporarily unavailable)
+407665 ppoll(0x4000007ff7dc,2,(nil),(nil)) = 1
+407665 read(6,0x3f1330c7,585) = 102
+407665 read(6,0x3f13312d,483) = 80
+407665 read(6,0x3f13317d,403) = 18
+407665 read(6,0x3f13318f,385) = 41
+407665 read(6,0x3f1331b8,344) = 53
+407665 read(6,0x3f1331ed,291) = 1
+407665 read(6,0x3f1331ee,290) = 76
+407665 read(6,0x3f13323a,214) = 18
+407665 read(6,0x3f13324c,196) = 42
+407665 read(6,0x3f133276,154) = 47
+407665 read(6,0x3f1332a5,107) = 42
+407665 read(6,0x3f1332cf,65) = 46
+407665 read(6,0x3f1332fd,19) = -1 errno=11 (Resource temporarily unavailable)
+407665 ppoll(0x4000007ff7dc,2,(nil),(nil)) = 1
+407665 read(6,0x7ff6f0,32) = 32
+407665 read(6,0x3f13331d,2035) = 83
+407665 read(6,0x3f133370,1952) = -1 errno=11 (Resource temporarily unavailable)
+407665 ppoll(0x4000007ff7dc,2,(nil),(nil)) = 1
+407665 read(4,0x7ff6f0,32) = 32
+407665 read(4,0x3f133b40,32) = 32
+407665 read(4,0x3f133b60,64) = 64
+407665 read(4,0x3f133ba0,128) = 128
+407665 read(4,0x3f133c20,256) = 256
+407665 read(4,0x3f133d20,512) = 512
+407665 read(4,0x3f133f20,1024) = 1024
+407665 read(4,0x3f134320,2048) = 2048
+407665 read(4,0x3f134b20,4096) = 4096
+407665 read(4,0x3f135b20,8192) = 2902
+407665 read(4,0x3f136676,5290) = 0
+407665 ioctl(6,FIONBIO,0) = 0
+407665 read(6,0x3f133370,1952) = 0
+407665 close(6) = 0
+407665 close(4) = 0
+407665 wait4(407669,0x4000007ff8a0,0,(nil)) = 407669
+407665 openat(AT_FDCWD,"/dev/null",O_RDONLY|O_CLOEXEC) = 3
+407665 pipe2(0x4000007ff490,524288) = 0
+407665 pipe2(0x4000007ff490,524288) = 0
+407665 prlimit64(0,RLIMIT_NOFILE,NULL,0x00004000007ff448) = 0 ({rlim_cur=1024,rlim_max=1048576})
+407665 prlimit64(0,RLIMIT_NOFILE,NULL,0x00004000007ff448) = 0 ({rlim_cur=1024,rlim_max=1048576})
+407665 prlimit64(0,RLIMIT_NOFILE,NULL,0x00004000007ff448) = 0 ({rlim_cur=1024,rlim_max=1048576})
+407665 prlimit64(0,RLIMIT_NOFILE,NULL,0x00004000007ff448) = 0 ({rlim_cur=1024,rlim_max=1048576})
+407665 prlimit64(0,RLIMIT_NOFILE,NULL,0x00004000007ff448) = 0 ({rlim_cur=1024,rlim_max=1048576})
+407665 prlimit64(0,RLIMIT_NOFILE,NULL,0x00004000007ff448) = 0 ({rlim_cur=1024,rlim_max=1048576})
+407665 mmap(NULL,36864,PROT_READ|PROT_WRITE,MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK,-1,0) = 0x0000400000a9a000
+407665 rt_sigprocmask(SIG_BLOCK,0x0000400000a248d0,0x00004000007ff338,8) = 0
+407665 Unknown syscall 435
+407665 clone(CLONE_VM|CLONE_VFORK|0x11,child_stack=0x0000400000aa3000,parent_tidptr=0x0000000000000000,tls=0x0000000000000000,child_tidptr=0x0000000000000000) =  = 407671
+0
+407665 munmap(0x0000400000a9a000,36864) = 0
+407665 rt_sigprocmask(SIG_SETMASK,0x00004000007ff338,NULL,8) = 0
+407671 rt_sigprocmask(SIG_BLOCK,NULL,0x0000400000aa2e90,8) = 0
+407665 close(3) = 0
+407665 close(5) = 0
+407665 close(7) = 0
+407665 ioctl(4,FIONBIO,1)407671 rt_sigaction(SIGHUP,NULL,0x0000400000aa2dd0 = )0
+407665 ioctl( = 6,0FIONBIO
+,1) = 0
+407665 ppoll(0x4000007ff7dc,2,(nil),(nil))407671 rt_sigaction(SIGINT,NULL,0x0000400000aa2dd0) = 0
+407671 rt_sigaction(SIGQUIT,NULL,0x0000400000aa2dd0) = 0
+407671 rt_sigaction(SIGILL,NULL,0x0000400000aa2dd0) = 0
+407671 rt_sigaction(SIGTRAP,NULL,0x0000400000aa2dd0) = 0
+407671 rt_sigaction(SIGIOT,NULL,0x0000400000aa2dd0) = 0
+407671 rt_sigaction(SIGBUS,NULL,0x0000400000aa2dd0) = 0
+407671 rt_sigaction(SIGBUS,0x0000400000aa2d38,NULL) = 0
+407671 rt_sigaction(SIGFPE,NULL,0x0000400000aa2dd0) = 0
+407671 rt_sigaction(SIGUSR1,NULL,0x0000400000aa2dd0) = 0
+407671 rt_sigaction(SIGSEGV,NULL,0x0000400000aa2dd0) = 0
+407671 rt_sigaction(SIGSEGV,0x0000400000aa2d38,NULL) = 0
+407671 rt_sigaction(SIGUSR2,NULL,0x0000400000aa2dd0) = 0
+407671 rt_sigaction(SIGPIPE,0x0000400000aa2d38,NULL) = 0
+407671 rt_sigaction(SIGALRM,NULL,0x0000400000aa2dd0) = 0
+407671 rt_sigaction(SIGTERM,NULL,0x0000400000aa2dd0) = 0
+407671 rt_sigaction(SIGSTKFLT,NULL,0x0000400000aa2dd0) = 0
+407671 rt_sigaction(SIGCHLD,NULL,0x0000400000aa2dd0) = 0
+407671 rt_sigaction(SIGCONT,NULL,0x0000400000aa2dd0) = 0
+407671 rt_sigaction(SIGTSTP,NULL,0x0000400000aa2dd0) = 0
+407671 rt_sigaction(SIGTTIN,NULL,0x0000400000aa2dd0) = 0
+407671 rt_sigaction(SIGTTOU,NULL,0x0000400000aa2dd0) = 0
+407671 rt_sigaction(SIGURG,NULL,0x0000400000aa2dd0) = 0
+407671 rt_sigaction(SIGXCPU,NULL,0x0000400000aa2dd0) = 0
+407671 rt_sigaction(SIGXFSZ,NULL,0x0000400000aa2dd0) = 0
+407671 rt_sigaction(SIGVTALRM,NULL,0x0000400000aa2dd0) = 0
+407671 rt_sigaction(SIGPROF,NULL,0x0000400000aa2dd0) = 0
+407671 rt_sigaction(SIGWINCH,NULL,0x0000400000aa2dd0) = 0
+407671 rt_sigaction(SIGIO,NULL,0x0000400000aa2dd0) = 0
+407671 rt_sigaction(SIGPWR,NULL,0x0000400000aa2dd0) = 0
+407671 rt_sigaction(SIGSYS,NULL,0x0000400000aa2dd0) = 0
+407671 rt_sigaction(32,0x0000400000aa2d38,NULL) = 0
+407671 rt_sigaction(33,0x0000400000aa2d38,NULL) = 0
+407671 rt_sigaction(34,NULL,0x0000400000aa2dd0) = 0
+407671 rt_sigaction(35,NULL,0x0000400000aa2dd0) = 0
+407671 rt_sigaction(36,NULL,0x0000400000aa2dd0) = 0
+407671 rt_sigaction(37,NULL,0x0000400000aa2dd0) = 0
+407671 rt_sigaction(38,NULL,0x0000400000aa2dd0) = 0
+407671 rt_sigaction(39,NULL,0x0000400000aa2dd0) = 0
+407671 rt_sigaction(40,NULL,0x0000400000aa2dd0) = 0
+407671 rt_sigaction(41,NULL,0x0000400000aa2dd0) = 0
+407671 rt_sigaction(42,NULL,0x0000400000aa2dd0) = 0
+407671 rt_sigaction(43,NULL,0x0000400000aa2dd0) = 0
+407671 rt_sigaction(44,NULL,0x0000400000aa2dd0) = 0
+407671 rt_sigaction(45,NULL,0x0000400000aa2dd0) = 0
+407671 rt_sigaction(46,NULL,0x0000400000aa2dd0) = 0
+407671 rt_sigaction(47,NULL,0x0000400000aa2dd0) = 0
+407671 rt_sigaction(48,NULL,0x0000400000aa2dd0) = 0
+407671 rt_sigaction(49,NULL,0x0000400000aa2dd0) = 0
+407671 rt_sigaction(50,NULL,0x0000400000aa2dd0) = 0
+407671 rt_sigaction(51,NULL,0x0000400000aa2dd0) = 0
+407671 rt_sigaction(52,NULL,0x0000400000aa2dd0) = 0
+407671 rt_sigaction(53,NULL,0x0000400000aa2dd0) = 0
+407671 rt_sigaction(54,NULL,0x0000400000aa2dd0) = 0
+407671 rt_sigaction(55,NULL,0x0000400000aa2dd0) = 0
+407671 rt_sigaction(56,NULL,0x0000400000aa2dd0) = 0
+407671 rt_sigaction(57,NULL,0x0000400000aa2dd0) = 0
+407671 rt_sigaction(58,NULL,0x0000400000aa2dd0) = 0
+407671 rt_sigaction(59,NULL,0x0000400000aa2dd0) = 0
+407671 rt_sigaction(60,NULL,0x0000400000aa2dd0) = 0
+407671 rt_sigaction(61,NULL,0x0000400000aa2dd0) = 0
+407671 dup3(3,0,0) = 0
+407671 dup3(5,1,0) = 1
+407671 dup3(7,2,0) = 1
+407665 read(6,0x7ff6f0,32) = 32
+407665 read(6,0x3f132b60,32) = 32
+407665 read(6,0x3f132b80,64) = 6
+407665 read(6,0x3f132b86,58) = -1 errno=11 (Resource temporarily unavailable)
+407665 ppoll(0x4000007ff7dc,2,(nil),(nil)) = 1
+407665 read(6,0x3f132b86,58) = 58
+407665 read(6,0x7ff6f0,32) = 32
+407665 read(6,0x3f132be0,96) = 96
+407665 read(6,0x3f132c40,256) = 65
+407665 read(6,0x3f132c81,191) = -1 errno=11 (Resource temporarily unavailable)
+407665 ppoll(0x4000007ff7dc,2,(nil),(nil)) = 1
+407665 read(6,0x3f132c81,191) = 42
+407665 read(6,0x3f132cab,149) = -1 errno=11 (Resource temporarily unavailable)
+407665 ppoll(0x4000007ff7dc,2,(nil),(nil)) = 1
+407665 read(6,0x3f132cab,149) = 100
+407665 read(6,0x3f132d0f,49) = -1 errno=11 (Resource temporarily unavailable)
+407665 ppoll(0x4000007ff7dc,2,(nil),(nil)) = 1
+407665 read(6,0x3f132d0f,49) = 49
+407665 read(6,0x7ff6f0,32) = 32
+407665 read(6,0x3f132d60,480) = 62
+407665 read(6,0x3f132d9e,418) = 101
+407665 read(6,0x3f132e03,317) = 36
+407665 read(6,0x3f132e27,281) = -1 errno=11 (Resource temporarily unavailable)
+407665 ppoll(0x4000007ff7dc,2,(nil),(nil)) = 1
+407665 read(6,0x3f132e27,281) = 134
+407665 read(6,0x3f132ead,147) = -1 errno=11 (Resource temporarily unavailable)
+407665 ppoll(0x4000007ff7dc,2,(nil),(nil)) = 1
+407665 read(6,0x3f132ead,147) = 133
+407665 read(6,0x3f132f32,14) = -1 errno=11 (Resource temporarily unavailable)
+407665 ppoll(0x4000007ff7dc,2,(nil),(nil)) = 1
+407665 read(6,0x7ff6f0,32) = 32
+407665 read(6,0x3f132f52,1006) = 276
+407665 read(6,0x3f133066,730) = 42
+407665 read(6,0x3f133090,688) = -1 errno=11 (Resource temporarily unavailable)
+407665 ppoll(0x4000007ff7dc,2,(nil),(nil)) = 1
+407665 read(6,0x3f133090,688) = 83
+407665 read(6,0x3f1330e3,605) = 56
+407665 read(6,0x3f13311b,549) = 79
+407665 read(6,0x3f13316a,470) = 42
+407665 read(6,0x3f133194,428) = 97
+407665 read(6,0x3f1331f5,331) = -1 errno=11 (Resource temporarily unavailable)
+407665 ppoll(0x4000007ff7dc,2,(nil),(nil)) = 1
+407665 read(6,0x3f1331f5,331) = 138
+407665 read(6,0x3f13327f,193) = -1 errno=11 (Resource temporarily unavailable)
+407665 ppoll(0x4000007ff7dc,2,(nil),(nil)) = 1
+407665 read(6,0x3f13327f,193) = 134
+407665 read(6,0x3f133305,59) = 6
+407665 read(6,0x3f13330b,53) = 3
+407665 read(6,0x3f13330e,50) = 50
+407665 read(6,0x7ff6f0,32) = 32
+407665 read(6,0x3f133360,2016) = 55
+407665 read(6,0x3f133397,1961) = -1 errno=11 (Resource temporarily unavailable)
+407665 ppoll(0x4000007ff7dc,2,(nil),(nil)) = 1
+407665 read(6,0x3f133397,1961) = 136
+407665 read(6,0x3f13341f,1825) = -1 errno=11 (Resource temporarily unavailable)
+407665 ppoll(0x4000007ff7dc,2,(nil),(nil)) = 1
+407665 read(6,0x3f13341f,1825) = 133
+407665 read(6,0x3f1334a4,1692) = -1 errno=11 (Resource temporarily unavailable)
+407665 ppoll(0x4000007ff7dc,2,(nil),(nil)) = 1
+407665 read(6,0x3f1334a4,1692) = 132
+407665 read(6,0x3f133528,1560) = -1 errno=11 (Resource temporarily unavailable)
+407665 ppoll(0x4000007ff7dc,2,(nil),(nil)) = 1
+407665 read(6,0x3f133528,1560) = 127
+407665 read(6,0x3f1335a7,1433) = 41
+407665 read(6,0x3f1335d0,1392) = 79
+407665 read(6,0x3f13361f,1313) = 6
+407665 read(6,0x3f133625,1307) = -1 errno=11 (Resource temporarily unavailable)
+407665 ppoll(0x4000007ff7dc,2,(nil),(nil)) = 1
+407665 read(6,0x3f133625,1307) = 115
+407665 read(6,0x3f133698,1192) = -1 errno=11 (Resource temporarily unavailable)
+407665 ppoll(0x4000007ff7dc,2,(nil),(nil)) = 1
+407665 read(4,0x7ff6f0,32) = 32
+407665 read(4,0x3f133b70,32) = 32
+407665 read(4,0x3f133b90,64) = 64
+407665 read(4,0x3f133bd0,128) = 128
+407665 read(4,0x3f133c50,256) = 256
+407665 read(4,0x3f133d50,512) = 512
+407665 read(4,0x3f133f50,1024) = 1024
+407665 read(4,0x3f134350,2048) = 831
+407665 read(4,0x3f13468f,1217) = -1 errno=11 (Resource temporarily unavailable)
+407665 ppoll(0x4000007ff7dc,2,(nil),(nil)) = 1
+407665 read(4,0x3f13468f,1217) = 388
+407665 read(4,0x3f134813,829) = -1 errno=11 (Resource temporarily unavailable)
+407665 ppoll(0x4000007ff7dc,2,(nil),(nil)) = 2
+407665 read(4,0x3f134813,829) = 0
+407665 ioctl(6,FIONBIO,0) = 0
+407665 read(6,0x3f133698,1192) = 0
+407665 close(6) = 0
+407665 close(4) = 0
+407665 wait4(407671,0x4000007ff8a0,0,(nil)) = 407671
+407665 openat(AT_FDCWD,"/dev/null",O_RDONLY|O_CLOEXEC) = 3
+407665 pipe2(0x4000007ff490,524288) = 0
+407665 pipe2(0x4000007ff490,524288) = 0
+407665 prlimit64(0,RLIMIT_NOFILE,NULL,0x00004000007ff448) = 0 ({rlim_cur=1024,rlim_max=1048576})
+407665 prlimit64(0,RLIMIT_NOFILE,NULL,0x00004000007ff448) = 0 ({rlim_cur=1024,rlim_max=1048576})
+407665 prlimit64(0,RLIMIT_NOFILE,NULL,0x00004000007ff448) = 0 ({rlim_cur=1024,rlim_max=1048576})
+407665 prlimit64(0,RLIMIT_NOFILE,NULL,0x00004000007ff448) = 0 ({rlim_cur=1024,rlim_max=1048576})
+407665 prlimit64(0,RLIMIT_NOFILE,NULL,0x00004000007ff448) = 0 ({rlim_cur=1024,rlim_max=1048576})
+407665 prlimit64(0,RLIMIT_NOFILE,NULL,0x00004000007ff448) = 0 ({rlim_cur=1024,rlim_max=1048576})
+407665 mmap(NULL,36864,PROT_READ|PROT_WRITE,MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK,-1,0) = 0x0000400000aa3000
+407665 rt_sigprocmask(SIG_BLOCK,0x0000400000a248d0,0x00004000007ff338,8) = 0
+407665 Unknown syscall 435
+407665 clone(CLONE_VM|CLONE_VFORK|0x11,child_stack=0x0000400000aac000,parent_tidptr=0x0000000000000000,tls=0x0000000000000000,child_tidptr=0x0000000000000000) = 407673
+407665 munmap(0x0000400000aa3000,36864) = 0
+407665 rt_sigprocmask(SIG_SETMASK,0x00004000007ff338,NULL,8) = 0
+407665 close(3) = 0
+ = 407665 close(5) = 00
+
+407665 close(7) = 0
+407665 ioctl(4,FIONBIO,1) = 0
+407665 ioctl(6,FIONBIO,1) = 0
+407665 ppoll(0x4000007ff7dc,2,(nil),(nil))407673 rt_sigprocmask(SIG_BLOCK,NULL,0x0000400000aabe90,8) = 0
+407673 rt_sigaction(SIGHUP,NULL,0x0000400000aabdd0) = 0
+407673 rt_sigaction(SIGINT,NULL,0x0000400000aabdd0) = 0
+407673 rt_sigaction(SIGQUIT,NULL,0x0000400000aabdd0) = 0
+407673 rt_sigaction(SIGILL,NULL,0x0000400000aabdd0) = 0
+407673 rt_sigaction(SIGTRAP,NULL,0x0000400000aabdd0) = 0
+407673 rt_sigaction(SIGIOT,NULL,0x0000400000aabdd0) = 0
+407673 rt_sigaction(SIGBUS,NULL,0x0000400000aabdd0) = 0
+407673 rt_sigaction(SIGBUS,0x0000400000aabd38,NULL) = 0
+407673 rt_sigaction(SIGFPE,NULL,0x0000400000aabdd0) = 0
+407673 rt_sigaction(SIGUSR1,NULL,0x0000400000aabdd0) = 0
+407673 rt_sigaction(SIGSEGV,NULL,0x0000400000aabdd0) = 0
+407673 rt_sigaction(SIGSEGV,0x0000400000aabd38,NULL) = 0
+407673 rt_sigaction(SIGUSR2,NULL,0x0000400000aabdd0) = 0
+407673 rt_sigaction(SIGPIPE,0x0000400000aabd38,NULL) = 0
+407673 rt_sigaction(SIGALRM,NULL,0x0000400000aabdd0) = 0
+407673 rt_sigaction(SIGTERM,NULL,0x0000400000aabdd0) = 0
+407673 rt_sigaction(SIGSTKFLT,NULL,0x0000400000aabdd0) = 0
+407673 rt_sigaction(SIGCHLD,NULL,0x0000400000aabdd0) = 0
+407673 rt_sigaction(SIGCONT,NULL,0x0000400000aabdd0) = 0
+407673 rt_sigaction(SIGTSTP,NULL,0x0000400000aabdd0) = 0
+407673 rt_sigaction(SIGTTIN,NULL,0x0000400000aabdd0) = 0
+407673 rt_sigaction(SIGTTOU,NULL,0x0000400000aabdd0) = 0
+407673 rt_sigaction(SIGURG,NULL,0x0000400000aabdd0) = 0
+407673 rt_sigaction(SIGXCPU,NULL,0x0000400000aabdd0) = 0
+407673 rt_sigaction(SIGXFSZ,NULL,0x0000400000aabdd0) = 0
+407673 rt_sigaction(SIGVTALRM,NULL,0x0000400000aabdd0) = 0
+407673 rt_sigaction(SIGPROF,NULL,0x0000400000aabdd0) = 0
+407673 rt_sigaction(SIGWINCH,NULL,0x0000400000aabdd0) = 0
+407673 rt_sigaction(SIGIO,NULL,0x0000400000aabdd0) = 0
+407673 rt_sigaction(SIGPWR,NULL,0x0000400000aabdd0) = 0
+407673 rt_sigaction(SIGSYS,NULL,0x0000400000aabdd0) = 0
+407673 rt_sigaction(32,0x0000400000aabd38,NULL) = 0
+407673 rt_sigaction(33,0x0000400000aabd38,NULL) = 0
+407673 rt_sigaction(34,NULL,0x0000400000aabdd0) = 0
+407673 rt_sigaction(35,NULL,0x0000400000aabdd0) = 0
+407673 rt_sigaction(36,NULL,0x0000400000aabdd0) = 0
+407673 rt_sigaction(37,NULL,0x0000400000aabdd0) = 0
+407673 rt_sigaction(38,NULL,0x0000400000aabdd0) = 0
+407673 rt_sigaction(39,NULL,0x0000400000aabdd0) = 0
+407673 rt_sigaction(40,NULL,0x0000400000aabdd0) = 0
+407673 rt_sigaction(41,NULL,0x0000400000aabdd0) = 0
+407673 rt_sigaction(42,NULL,0x0000400000aabdd0) = 0
+407673 rt_sigaction(43,NULL,0x0000400000aabdd0) = 0
+407673 rt_sigaction(44,NULL,0x0000400000aabdd0) = 0
+407673 rt_sigaction(45,NULL,0x0000400000aabdd0) = 0
+407673 rt_sigaction(46,NULL,0x0000400000aabdd0) = 0
+407673 rt_sigaction(47,NULL,0x0000400000aabdd0) = 0
+407673 rt_sigaction(48,NULL,0x0000400000aabdd0) = 0
+407673 rt_sigaction(49,NULL,0x0000400000aabdd0) = 0
+407673 rt_sigaction(50,NULL,0x0000400000aabdd0) = 0
+407673 rt_sigaction(51,NULL,0x0000400000aabdd0) = 0
+407673 rt_sigaction(52,NULL,0x0000400000aabdd0) = 0
+407673 rt_sigaction(53,NULL,0x0000400000aabdd0) = 0
+407673 rt_sigaction(54,NULL,0x0000400000aabdd0) = 0
+407673 rt_sigaction(55,NULL,0x0000400000aabdd0) = 0
+407673 rt_sigaction(56,NULL,0x0000400000aabdd0) = 0
+407673 rt_sigaction(57,NULL,0x0000400000aabdd0) = 0
+407673 rt_sigaction(58,NULL,0x0000400000aabdd0) = 0
+407673 rt_sigaction(59,NULL,0x0000400000aabdd0) = 0
+407673 rt_sigaction(60,NULL,0x0000400000aabdd0) = 0
+407673 rt_sigaction(61,NULL,0x0000400000aabdd0) = 0
+407673 dup3(3,0,0) = 0
+407673 dup3(5,1,0) = 1
+407673 dup3(7,2,0) = 1
+407665 read(6,0x7ff6f0,32) = 32
+407665 read(6,0x3f132b30,32) = 32
+407665 read(6,0x3f132b50,64) = 6
+407665 read(6,0x3f132b56,58) = -1 errno=11 (Resource temporarily unavailable)
+407665 ppoll(0x4000007ff7dc,2,(nil),(nil)) = 1
+407665 read(6,0x3f132b56,58) = 58
+407665 read(6,0x7ff6f0,32) = 32
+407665 read(6,0x3f132bb0,96) = 4
+407665 read(6,0x3f132bb4,92) = -1 errno=11 (Resource temporarily unavailable)
+407665 ppoll(0x4000007ff7dc,2,(nil),(nil)) = 1
+407665 read(6,0x3f132bb4,92) = 92
+407665 read(6,0x7ff6f0,32) = 31
+407665 read(6,0x3f132c2f,225) = 47
+407665 read(6,0x3f132c5e,178) = 15
+407665 read(6,0x3f132c6d,163) = -1 errno=11 (Resource temporarily unavailable)
+407665 ppoll(0x4000007ff7dc,2,(nil),(nil)) = 1
+407665 read(6,0x3f132c6d,163) = 102
+407665 read(6,0x3f132cd3,61) = 61
+407665 read(6,0x7ff6f0,32) = 32
+407665 read(6,0x3f132d30,480) = 105
+407665 read(6,0x3f132d99,375) = -1 errno=11 (Resource temporarily unavailable)
+407665 ppoll(0x4000007ff7dc,2,(nil),(nil)) = 1
+407665 read(6,0x3f132d99,375) = 137
+407665 read(6,0x3f132e22,238) = 79
+407665 read(6,0x3f132e71,159) = -1 errno=11 (Resource temporarily unavailable)
+407665 ppoll(0x4000007ff7dc,2,(nil),(nil)) = 1
+407665 read(6,0x3f132e71,159) = 111
+407665 read(6,0x3f132ee0,48) = -1 errno=11 (Resource temporarily unavailable)
+407665 ppoll(0x4000007ff7dc,2,(nil),(nil)) = 1
+407665 read(6,0x3f132ee0,48) = 48
+407665 read(6,0x7ff6f0,32) = 32
+407665 read(6,0x3f132f30,992) = 7
+407665 read(6,0x3f132f37,985) = 3
+407665 read(6,0x3f132f3a,982) = 88
+407665 read(6,0x3f132f92,894) = 6
+407665 read(6,0x3f132f98,888) = -1 errno=11 (Resource temporarily unavailable)
+407665 ppoll(0x4000007ff7dc,2,(nil),(nil)) = 1
+407665 read(6,0x3f132f98,888) = 101
+407665 read(6,0x3f132ffd,787) = -1 errno=11 (Resource temporarily unavailable)
+407665 ppoll(0x4000007ff7dc,2,(nil),(nil)) = 1
+407665 read(6,0x3f132ffd,787) = 304
+407665 read(6,0x3f13312d,483) = 83
+407665 read(6,0x3f133180,400) = 15
+407665 read(6,0x3f13318f,385) = 3
+407665 read(6,0x3f133192,382) = 91
+407665 read(6,0x3f1331ed,291) = 1
+407665 read(6,0x3f1331ee,290) = -1 errno=11 (Resource temporarily unavailable)
+407665 ppoll(0x4000007ff7dc,2,(nil),(nil)) = 1
+407665 read(6,0x3f1331ee,290) = 94
+407665 read(6,0x3f13324c,196) = 42
+407665 read(6,0x3f133276,154) = 47
+407665 read(6,0x3f1332a5,107) = -1 errno=11 (Resource temporarily unavailable)
+407665 ppoll(0x4000007ff7dc,2,(nil),(nil)) = 1
+407665 read(6,0x3f1332a5,107) = 88
+407665 read(6,0x3f1332fd,19) = -1 errno=11 (Resource temporarily unavailable)
+407665 ppoll(0x4000007ff7dc,2,(nil),(nil)) = 1
+407665 read(6,0x7ff6f0,32) = 32
+407665 read(6,0x3f13331d,2035) = 53
+407665 read(6,0x3f133352,1982) = -1 errno=11 (Resource temporarily unavailable)
+407665 ppoll(0x4000007ff7dc,2,(nil),(nil)) = 1
+407665 read(6,0x3f133352,1982) = 69
+407665 read(6,0x3f133397,1913) = 15
+407665 read(6,0x3f1333a6,1898) = -1 errno=11 (Resource temporarily unavailable)
+407665 ppoll(0x4000007ff7dc,2,(nil),(nil)) = 1
+407665 read(6,0x3f1333a6,1898) = 236
+407665 read(6,0x3f133492,1662) = -1 errno=11 (Resource temporarily unavailable)
+407665 ppoll(0x4000007ff7dc,2,(nil),(nil)) = 1
+407665 read(6,0x3f133492,1662) = 23
+407665 read(6,0x3f1334a9,1639) = -1 errno=11 (Resource temporarily unavailable)
+407665 ppoll(0x4000007ff7dc,2,(nil),(nil)) = 2
+407665 read(4,0x7ff6f0,32) = 0
+407665 ioctl(6,FIONBIO,0) = 0
+407665 read(6,0x3f1334a9,1639) = 0
+407665 close(6) = 0
+407665 close(4) = 0
+407665 wait4(407673,0x4000007ff8a0,0,(nil)) = 407673
+407665 statx(AT_FDCWD,"/dev/vmci",AT_STATX_SYNC_AS_STAT,STATX_ALL,0x00004000007ff540) = -1 errno=2 (No such file or directory)
+407665 openat(AT_FDCWD,"/dev/null",O_RDONLY|O_CLOEXEC) = 3
+407665 pipe2(0x4000007ff490,524288) = 0
+407665 pipe2(0x4000007ff490,524288) = 0
+407665 prlimit64(0,RLIMIT_NOFILE,NULL,0x00004000007ff448) = 0 ({rlim_cur=1024,rlim_max=1048576})
+407665 prlimit64(0,RLIMIT_NOFILE,NULL,0x00004000007ff448) = 0 ({rlim_cur=1024,rlim_max=1048576})
+407665 prlimit64(0,RLIMIT_NOFILE,NULL,0x00004000007ff448) = 0 ({rlim_cur=1024,rlim_max=1048576})
+407665 prlimit64(0,RLIMIT_NOFILE,NULL,0x00004000007ff448) = 0 ({rlim_cur=1024,rlim_max=1048576})
+407665 prlimit64(0,RLIMIT_NOFILE,NULL,0x00004000007ff448) = 0 ({rlim_cur=1024,rlim_max=1048576})
+407665 prlimit64(0,RLIMIT_NOFILE,NULL,0x00004000007ff448) = 0 ({rlim_cur=1024,rlim_max=1048576})
+407665 mmap(NULL,36864,PROT_READ|PROT_WRITE,MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK,-1,0) = 0x0000400000aac000
+407665 rt_sigprocmask(SIG_BLOCK,0x0000400000a248d0,0x00004000007ff338,8) = 0
+407665 Unknown syscall 435
+407665 clone(CLONE_VM|CLONE_VFORK|0x11,child_stack=0x0000400000ab5000,parent_tidptr=0x0000000000000000,tls=0x0000000000000000,child_tidptr=0x0000000000000000) = 407675
+ = 0
+407665 munmap(0x0000400000aac000,36864) = 0
+407665 rt_sigprocmask(SIG_SETMASK,0x00004000007ff338,NULL,8) = 0
+407675 rt_sigprocmask(SIG_BLOCK,NULL,0x0000400000ab4e90,8) = 0
+407665 close(3) = 0
+407665 close(5) = 0
+407665 close(7) = 0
+407665 ioctl(4,FIONBIO,1) = 0
+407665 ioctl(6,FIONBIO,407675 1rt_sigaction()SIGHUP, = NULL,00x0000400000ab4dd0
+) = 0
+407665 ppoll(0x4000007ff7dc,2,(nil),(nil))407675 rt_sigaction(SIGINT,NULL,0x0000400000ab4dd0) = 0
+407675 rt_sigaction(SIGQUIT,NULL,0x0000400000ab4dd0) = 0
+407675 rt_sigaction(SIGILL,NULL,0x0000400000ab4dd0) = 0
+407675 rt_sigaction(SIGTRAP,NULL,0x0000400000ab4dd0) = 0
+407675 rt_sigaction(SIGIOT,NULL,0x0000400000ab4dd0) = 0
+407675 rt_sigaction(SIGBUS,NULL,0x0000400000ab4dd0) = 0
+407675 rt_sigaction(SIGBUS,0x0000400000ab4d38,NULL) = 0
+407675 rt_sigaction(SIGFPE,NULL,0x0000400000ab4dd0) = 0
+407675 rt_sigaction(SIGUSR1,NULL,0x0000400000ab4dd0) = 0
+407675 rt_sigaction(SIGSEGV,NULL,0x0000400000ab4dd0) = 0
+407675 rt_sigaction(SIGSEGV,0x0000400000ab4d38,NULL) = 0
+407675 rt_sigaction(SIGUSR2,NULL,0x0000400000ab4dd0) = 0
+407675 rt_sigaction(SIGPIPE,0x0000400000ab4d38,NULL) = 0
+407675 rt_sigaction(SIGALRM,NULL,0x0000400000ab4dd0) = 0
+407675 rt_sigaction(SIGTERM,NULL,0x0000400000ab4dd0) = 0
+407675 rt_sigaction(SIGSTKFLT,NULL,0x0000400000ab4dd0) = 0
+407675 rt_sigaction(SIGCHLD,NULL,0x0000400000ab4dd0) = 0
+407675 rt_sigaction(SIGCONT,NULL,0x0000400000ab4dd0) = 0
+407675 rt_sigaction(SIGTSTP,NULL,0x0000400000ab4dd0) = 0
+407675 rt_sigaction(SIGTTIN,NULL,0x0000400000ab4dd0) = 0
+407675 rt_sigaction(SIGTTOU,NULL,0x0000400000ab4dd0) = 0
+407675 rt_sigaction(SIGURG,NULL,0x0000400000ab4dd0) = 0
+407675 rt_sigaction(SIGXCPU,NULL,0x0000400000ab4dd0) = 0
+407675 rt_sigaction(SIGXFSZ,NULL,0x0000400000ab4dd0) = 0
+407675 rt_sigaction(SIGVTALRM,NULL,0x0000400000ab4dd0) = 0
+407675 rt_sigaction(SIGPROF,NULL,0x0000400000ab4dd0) = 0
+407675 rt_sigaction(SIGWINCH,NULL,0x0000400000ab4dd0) = 0
+407675 rt_sigaction(SIGIO,NULL,0x0000400000ab4dd0) = 0
+407675 rt_sigaction(SIGPWR,NULL,0x0000400000ab4dd0) = 0
+407675 rt_sigaction(SIGSYS,NULL,0x0000400000ab4dd0) = 0
+407675 rt_sigaction(32,0x0000400000ab4d38,NULL) = 0
+407675 rt_sigaction(33,0x0000400000ab4d38,NULL) = 0
+407675 rt_sigaction(34,NULL,0x0000400000ab4dd0) = 0
+407675 rt_sigaction(35,NULL,0x0000400000ab4dd0) = 0
+407675 rt_sigaction(36,NULL,0x0000400000ab4dd0) = 0
+407675 rt_sigaction(37,NULL,0x0000400000ab4dd0) = 0
+407675 rt_sigaction(38,NULL,0x0000400000ab4dd0) = 0
+407675 rt_sigaction(39,NULL,0x0000400000ab4dd0) = 0
+407675 rt_sigaction(40,NULL,0x0000400000ab4dd0) = 0
+407675 rt_sigaction(41,NULL,0x0000400000ab4dd0) = 0
+407675 rt_sigaction(42,NULL,0x0000400000ab4dd0) = 0
+407675 rt_sigaction(43,NULL,0x0000400000ab4dd0) = 0
+407675 rt_sigaction(44,NULL,0x0000400000ab4dd0) = 0
+407675 rt_sigaction(45,NULL,0x0000400000ab4dd0) = 0
+407675 rt_sigaction(46,NULL,0x0000400000ab4dd0) = 0
+407675 rt_sigaction(47,NULL,0x0000400000ab4dd0) = 0
+407675 rt_sigaction(48,NULL,0x0000400000ab4dd0) = 0
+407675 rt_sigaction(49,NULL,0x0000400000ab4dd0) = 0
+407675 rt_sigaction(50,NULL,0x0000400000ab4dd0) = 0
+407675 rt_sigaction(51,NULL,0x0000400000ab4dd0) = 0
+407675 rt_sigaction(52,NULL,0x0000400000ab4dd0) = 0
+407675 rt_sigaction(53,NULL,0x0000400000ab4dd0) = 0
+407675 rt_sigaction(54,NULL,0x0000400000ab4dd0) = 0
+407675 rt_sigaction(55,NULL,0x0000400000ab4dd0) = 0
+407675 rt_sigaction(56,NULL,0x0000400000ab4dd0) = 0
+407675 rt_sigaction(57,NULL,0x0000400000ab4dd0) = 0
+407675 rt_sigaction(58,NULL,0x0000400000ab4dd0) = 0
+407675 rt_sigaction(59,NULL,0x0000400000ab4dd0) = 0
+407675 rt_sigaction(60,NULL,0x0000400000ab4dd0) = 0
+407675 rt_sigaction(61,NULL,0x0000400000ab4dd0) = 0
+407675 dup3(3,0,0) = 0
+407675 dup3(5,1,0) = 1
+407675 dup3(7,2,0) = 1
+407665 read(6,0x7ff6f0,32) = 32
+407665 read(6,0x3f132b60,32) = 32
+407665 read(6,0x3f132b80,64) = 6
+407665 read(6,0x3f132b86,58) = -1 errno=11 (Resource temporarily unavailable)
+407665 ppoll(0x4000007ff7dc,2,(nil),(nil)) = 1
+407665 read(6,0x3f132b86,58) = 58
+407665 read(6,0x7ff6f0,32) = 32
+407665 read(6,0x3f132be0,96) = 4
+407665 read(6,0x3f132be4,92) = -1 errno=11 (Resource temporarily unavailable)
+407665 ppoll(0x4000007ff7dc,2,(nil),(nil)) = 1
+407665 read(6,0x3f132be4,92) = 81
+407665 read(6,0x3f132c35,11) = -1 errno=11 (Resource temporarily unavailable)
+407665 ppoll(0x4000007ff7dc,2,(nil),(nil)) = 1
+407665 read(6,0x7ff6f0,32) = 32
+407665 read(6,0x3f132c55,235) = 72
+407665 read(6,0x3f132c9d,163) = -1 errno=11 (Resource temporarily unavailable)
+407665 ppoll(0x4000007ff7dc,2,(nil),(nil)) = 1
+407665 read(6,0x3f132c9d,163) = 102
+407665 read(6,0x3f132d03,61) = -1 errno=11 (Resource temporarily unavailable)
+407665 ppoll(0x4000007ff7dc,2,(nil),(nil)) = 1
+407665 read(6,0x3f132d03,61) = 61
+407665 read(6,0x7ff6f0,32) = 32
+407665 read(6,0x3f132d60,480) = 9
+407665 read(6,0x3f132d69,471) = -1 errno=11 (Resource temporarily unavailable)
+407665 ppoll(0x4000007ff7dc,2,(nil),(nil)) = 1
+407665 read(6,0x3f132d69,471) = 96
+407665 read(6,0x3f132dc9,375) = -1 errno=11 (Resource temporarily unavailable)
+407665 ppoll(0x4000007ff7dc,2,(nil),(nil)) = 1
+407665 read(6,0x3f132dc9,375) = 95
+407665 read(6,0x3f132e28,280) = -1 errno=11 (Resource temporarily unavailable)
+407665 ppoll(0x4000007ff7dc,2,(nil),(nil)) = 1
+407665 read(6,0x3f132e28,280) = 121
+407665 read(6,0x3f132ea1,159) = -1 errno=11 (Resource temporarily unavailable)
+407665 ppoll(0x4000007ff7dc,2,(nil),(nil)) = 1
+407665 read(6,0x3f132ea1,159) = 111
+407665 read(6,0x3f132f10,48) = -1 errno=11 (Resource temporarily unavailable)
+407665 ppoll(0x4000007ff7dc,2,(nil),(nil)) = 1
+407665 read(6,0x3f132f10,48) = 42
+407665 read(6,0x3f132f3a,6) = 6
+407665 read(6,0x7ff6f0,32) = 32
+407665 read(6,0x3f132f60,992) = 145
+407665 read(6,0x3f132ff1,847) = 60
+407665 read(6,0x3f13302d,787) = -1 errno=11 (Resource temporarily unavailable)
+407665 ppoll(0x4000007ff7dc,2,(nil),(nil)) = 1
+407665 read(6,0x3f13302d,787) = 100
+407665 read(6,0x3f133091,687) = -1 errno=11 (Resource temporarily unavailable)
+407665 ppoll(0x4000007ff7dc,2,(nil),(nil)) = 1
+407665 read(6,0x3f133091,687) = 102
+407665 read(6,0x3f1330f7,585) = -1 errno=11 (Resource temporarily unavailable)
+407665 ppoll(0x4000007ff7dc,2,(nil),(nil)) = 1
+407665 read(6,0x3f1330f7,585) = 102
+407665 read(6,0x3f13315d,483) = -1 errno=11 (Resource temporarily unavailable)
+407665 ppoll(0x4000007ff7dc,2,(nil),(nil)) = 1
+407665 read(6,0x3f13315d,483) = 98
+407665 read(6,0x3f1331bf,385) = -1 errno=11 (Resource temporarily unavailable)
+407665 ppoll(0x4000007ff7dc,2,(nil),(nil)) = 1
+407665 read(6,0x3f1331bf,385) = 95
+407665 read(6,0x3f13321e,290) = -1 errno=11 (Resource temporarily unavailable)
+407665 ppoll(0x4000007ff7dc,2,(nil),(nil)) = 1
+407665 read(6,0x3f13321e,290) = 94
+407665 read(6,0x3f13327c,196) = -1 errno=11 (Resource temporarily unavailable)
+407665 ppoll(0x4000007ff7dc,2,(nil),(nil)) = 1
+407665 read(6,0x3f13327c,196) = 89
+407665 read(6,0x3f1332d5,107) = -1 errno=11 (Resource temporarily unavailable)
+407665 ppoll(0x4000007ff7dc,2,(nil),(nil)) = 1
+407665 read(6,0x3f1332d5,107) = 88
+407665 read(6,0x3f13332d,19) = -1 errno=11 (Resource temporarily unavailable)
+407665 ppoll(0x4000007ff7dc,2,(nil),(nil)) = 1
+407665 read(6,0x7ff6f0,32) = 32
+407665 read(6,0x3f13334d,2035) = 83
+407665 read(6,0x3f1333a0,1952) = -1 errno=11 (Resource temporarily unavailable)
+407665 ppoll(0x4000007ff7dc,2,(nil),(nil)) = 1
+407665 read(4,0x7ff6f0,32) = 32
+407665 read(4,0x3f133b70,32) = 32
+407665 read(4,0x3f133b90,64) = 64
+407665 read(4,0x3f133bd0,128) = 128
+407665 read(4,0x3f133c50,256) = 256
+407665 read(4,0x3f133d50,512) = 512
+407665 read(4,0x3f133f50,1024) = 1024
+407665 read(4,0x3f134350,2048) = 2048
+407665 read(4,0x3f135c80,4096) = 4096
+407665 read(4,0x3f136c80,8192) = 3248
+407665 read(4,0x3f137930,4944) = 0
+407665 ioctl(6,FIONBIO,0) = 0
+407665 read(6,0x3f1333a0,1952) = 0
+407665 close(6) = 0
+407665 close(4) = 0
+407665 wait4(407675,0x4000007ff8a0,0,(nil)) = 407675
+407665 openat(AT_FDCWD,"/proc/mounts",O_RDONLY|O_CLOEXEC) = 3
+407665 statx(3,"",AT_EMPTY_PATH|AT_STATX_SYNC_AS_STAT,STATX_ALL,0x00004000007ff590) = 0
+407665 read(3,0x7ff5f0,32) = 32
+407665 read(3,0x3f132b30,32) = 32
+407665 read(3,0x3f132b50,64) = 64
+407665 read(3,0x3f132b90,128) = 128
+407665 read(3,0x3f132c10,256) = 256
+407665 read(3,0x3f132d10,512) = 512
+407665 read(3,0x3f132f10,1024) = 610
+407665 read(3,0x3f133172,414) = 0
+407665 close(3) = 0
+407665 openat(AT_FDCWD,"/dev/null",O_RDONLY|O_CLOEXEC) = 3
+407665 pipe2(0x4000007ff490,524288) = 0
+407665 pipe2(0x4000007ff490,524288) = 0
+407665 prlimit64(0,RLIMIT_NOFILE,NULL,0x00004000007ff448) = 0 ({rlim_cur=1024,rlim_max=1048576})
+407665 prlimit64(0,RLIMIT_NOFILE,NULL,0x00004000007ff448) = 0 ({rlim_cur=1024,rlim_max=1048576})
+407665 prlimit64(0,RLIMIT_NOFILE,NULL,0x00004000007ff448) = 0 ({rlim_cur=1024,rlim_max=1048576})
+407665 prlimit64(0,RLIMIT_NOFILE,NULL,0x00004000007ff448) = 0 ({rlim_cur=1024,rlim_max=1048576})
+407665 prlimit64(0,RLIMIT_NOFILE,NULL,0x00004000007ff448) = 0 ({rlim_cur=1024,rlim_max=1048576})
+407665 prlimit64(0,RLIMIT_NOFILE,NULL,0x00004000007ff448) = 0 ({rlim_cur=1024,rlim_max=1048576})
+407665 mmap(NULL,36864,PROT_READ|PROT_WRITE,MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK,-1,0) = 0x0000400000ab5000
+407665 rt_sigprocmask(SIG_BLOCK,0x0000400000a248d0,0x00004000007ff338,8) = 0
+407665 Unknown syscall 435
+407665 clone(CLONE_VM|CLONE_VFORK|0x11,child_stack=0x0000400000abe000,parent_tidptr=0x0000000000000000,tls=0x0000000000000000,child_tidptr=0x0000000000000000) = 407677
+407665 munmap(0x0000400000ab5000,36864) = 0
+407665 rt_sigprocmask(SIG_SETMASK,0x00004000007ff338,NULL,8) = 0
+407665 close(3) =  = 0
+0407665
+close(5) = 0
+407665 close(7) = 0
+407665 ioctl(4,FIONBIO,1) = 0
+407665 ioctl(6,FIONBIO,1) = 0
+407665 ppoll(0x4000007ff7dc,2,(nil),(nil))407677 rt_sigprocmask(SIG_BLOCK,NULL,0x0000400000abde90,8) = 0
+407677 rt_sigaction(SIGHUP,NULL,0x0000400000abddd0) = 0
+407677 rt_sigaction(SIGINT,NULL,0x0000400000abddd0) = 0
+407677 rt_sigaction(SIGQUIT,NULL,0x0000400000abddd0) = 0
+407677 rt_sigaction(SIGILL,NULL,0x0000400000abddd0) = 0
+407677 rt_sigaction(SIGTRAP,NULL,0x0000400000abddd0) = 0
+407677 rt_sigaction(SIGIOT,NULL,0x0000400000abddd0) = 0
+407677 rt_sigaction(SIGBUS,NULL,0x0000400000abddd0) = 0
+407677 rt_sigaction(SIGBUS,0x0000400000abdd38,NULL) = 0
+407677 rt_sigaction(SIGFPE,NULL,0x0000400000abddd0) = 0
+407677 rt_sigaction(SIGUSR1,NULL,0x0000400000abddd0) = 0
+407677 rt_sigaction(SIGSEGV,NULL,0x0000400000abddd0) = 0
+407677 rt_sigaction(SIGSEGV,0x0000400000abdd38,NULL) = 0
+407677 rt_sigaction(SIGUSR2,NULL,0x0000400000abddd0) = 0
+407677 rt_sigaction(SIGPIPE,0x0000400000abdd38,NULL) = 0
+407677 rt_sigaction(SIGALRM,NULL,0x0000400000abddd0) = 0
+407677 rt_sigaction(SIGTERM,NULL,0x0000400000abddd0) = 0
+407677 rt_sigaction(SIGSTKFLT,NULL,0x0000400000abddd0) = 0
+407677 rt_sigaction(SIGCHLD,NULL,0x0000400000abddd0) = 0
+407677 rt_sigaction(SIGCONT,NULL,0x0000400000abddd0) = 0
+407677 rt_sigaction(SIGTSTP,NULL,0x0000400000abddd0) = 0
+407677 rt_sigaction(SIGTTIN,NULL,0x0000400000abddd0) = 0
+407677 rt_sigaction(SIGTTOU,NULL,0x0000400000abddd0) = 0
+407677 rt_sigaction(SIGURG,NULL,0x0000400000abddd0) = 0
+407677 rt_sigaction(SIGXCPU,NULL,0x0000400000abddd0) = 0
+407677 rt_sigaction(SIGXFSZ,NULL,0x0000400000abddd0) = 0
+407677 rt_sigaction(SIGVTALRM,NULL,0x0000400000abddd0) = 0
+407677 rt_sigaction(SIGPROF,NULL,0x0000400000abddd0) = 0
+407677 rt_sigaction(SIGWINCH,NULL,0x0000400000abddd0) = 0
+407677 rt_sigaction(SIGIO,NULL,0x0000400000abddd0) = 0
+407677 rt_sigaction(SIGPWR,NULL,0x0000400000abddd0) = 0
+407677 rt_sigaction(SIGSYS,NULL,0x0000400000abddd0) = 0
+407677 rt_sigaction(32,0x0000400000abdd38,NULL) = 0
+407677 rt_sigaction(33,0x0000400000abdd38,NULL) = 0
+407677 rt_sigaction(34,NULL,0x0000400000abddd0) = 0
+407677 rt_sigaction(35,NULL,0x0000400000abddd0) = 0
+407677 rt_sigaction(36,NULL,0x0000400000abddd0) = 0
+407677 rt_sigaction(37,NULL,0x0000400000abddd0) = 0
+407677 rt_sigaction(38,NULL,0x0000400000abddd0) = 0
+407677 rt_sigaction(39,NULL,0x0000400000abddd0) = 0
+407677 rt_sigaction(40,NULL,0x0000400000abddd0) = 0
+407677 rt_sigaction(41,NULL,0x0000400000abddd0) = 0
+407677 rt_sigaction(42,NULL,0x0000400000abddd0) = 0
+407677 rt_sigaction(43,NULL,0x0000400000abddd0) = 0
+407677 rt_sigaction(44,NULL,0x0000400000abddd0) = 0
+407677 rt_sigaction(45,NULL,0x0000400000abddd0) = 0
+407677 rt_sigaction(46,NULL,0x0000400000abddd0) = 0
+407677 rt_sigaction(47,NULL,0x0000400000abddd0) = 0
+407677 rt_sigaction(48,NULL,0x0000400000abddd0) = 0
+407677 rt_sigaction(49,NULL,0x0000400000abddd0) = 0
+407677 rt_sigaction(50,NULL,0x0000400000abddd0) = 0
+407677 rt_sigaction(51,NULL,0x0000400000abddd0) = 0
+407677 rt_sigaction(52,NULL,0x0000400000abddd0) = 0
+407677 rt_sigaction(53,NULL,0x0000400000abddd0) = 0
+407677 rt_sigaction(54,NULL,0x0000400000abddd0) = 0
+407677 rt_sigaction(55,NULL,0x0000400000abddd0) = 0
+407677 rt_sigaction(56,NULL,0x0000400000abddd0) = 0
+407677 rt_sigaction(57,NULL,0x0000400000abddd0) = 0
+407677 rt_sigaction(58,NULL,0x0000400000abddd0) = 0
+407677 rt_sigaction(59,NULL,0x0000400000abddd0) = 0
+407677 rt_sigaction(60,NULL,0x0000400000abddd0) = 0
+407677 rt_sigaction(61,NULL,0x0000400000abddd0) = 0
+407677 dup3(3,0,0) = 0
+407677 dup3(5,1,0) = 1
+407677 dup3(7,2,0) = 1
+407665 read(6,0x7ff6f0,32) = 32
+407665 read(6,0x3f132b00,32) = 32
+407665 read(6,0x3f132b20,64) = 6
+407665 read(6,0x3f132b26,58) = -1 errno=11 (Resource temporarily unavailable)
+407665 ppoll(0x4000007ff7dc,2,(nil),(nil)) = 1
+407665 read(6,0x3f132b26,58) = 58
+407665 read(6,0x7ff6f0,32) = 32
+407665 read(6,0x3f132b80,96) = 28
+407665 read(6,0x3f132b9c,68) = -1 errno=11 (Resource temporarily unavailable)
+407665 ppoll(0x4000007ff7dc,2,(nil),(nil)) = 1
+407665 read(6,0x3f132b9c,68) = 68
+407665 read(6,0x7ff6f0,32) = 32
+407665 read(6,0x3f132c00,224) = 5
+407665 read(6,0x3f132c05,219) = 42
+407665 read(6,0x3f132c2f,177) = -1 errno=11 (Resource temporarily unavailable)
+407665 ppoll(0x4000007ff7dc,2,(nil),(nil)) = 1
+407665 read(6,0x3f132c2f,177) = 127
+407665 read(6,0x3f132cae,50) = 50
+407665 read(6,0x7ff6f0,32) = 32
+407665 read(6,0x3f132d00,480) = 3
+407665 read(6,0x3f132d03,477) = -1 errno=11 (Resource temporarily unavailable)
+407665 ppoll(0x4000007ff7dc,2,(nil),(nil)) = 1
+407665 read(6,0x3f132d03,477) = 126
+407665 read(6,0x3f132d81,351) = -1 errno=11 (Resource temporarily unavailable)
+407665 ppoll(0x4000007ff7dc,2,(nil),(nil)) = 1
+407665 read(6,0x3f132d81,351) = 120
+407665 read(6,0x3f132df9,231) = 42
+407665 read(6,0x3f132e23,189) = 77
+407665 read(6,0x3f132e70,112) = -1 errno=11 (Resource temporarily unavailable)
+407665 ppoll(0x4000007ff7dc,2,(nil),(nil)) = 1
+407665 read(6,0x3f132e70,112) = 112
+407665 read(6,0x7ff6f0,32) = 32
+407665 read(6,0x3f132f00,992) = 136
+407665 read(6,0x3f132f88,856) = -1 errno=11 (Resource temporarily unavailable)
+407665 ppoll(0x4000007ff7dc,2,(nil),(nil)) = 1
+407665 read(6,0x3f132f88,856) = 42
+407665 read(6,0x3f132fb2,814) = -1 errno=11 (Resource temporarily unavailable)
+407665 ppoll(0x4000007ff7dc,2,(nil),(nil)) = 1
+407665 read(6,0x3f132fb2,814) = 69
+407665 read(6,0x3f132ff7,745) = -1 errno=11 (Resource temporarily unavailable)
+407665 ppoll(0x4000007ff7dc,2,(nil),(nil)) = 1
+407665 read(6,0x3f132ff7,745) = 121
+407665 read(6,0x3f133070,624) = -1 errno=11 (Resource temporarily unavailable)
+407665 ppoll(0x4000007ff7dc,2,(nil),(nil)) = 1
+407665 read(6,0x3f133070,624) = 125
+407665 read(6,0x3f1330ed,499) = -1 errno=11 (Resource temporarily unavailable)
+407665 ppoll(0x4000007ff7dc,2,(nil),(nil)) = 1
+407665 read(6,0x3f1330ed,499) = 124
+407665 read(6,0x3f133169,375) = -1 errno=11 (Resource temporarily unavailable)
+407665 ppoll(0x4000007ff7dc,2,(nil),(nil)) = 1
+407665 read(6,0x3f133169,375) = 126
+407665 read(6,0x3f1331e7,249) = 42
+407665 read(6,0x3f133211,207) = 84
+407665 read(6,0x3f133265,123) = -1 errno=11 (Resource temporarily unavailable)
+407665 ppoll(0x4000007ff7dc,2,(nil),(nil)) = 1
+407665 read(6,0x3f133265,123) = 122
+407665 read(6,0x3f1332df,1) = 1
+407665 read(6,0x7ff6f0,32) = 32
+407665 read(6,0x3f133c10,2016) = 317
+407665 read(6,0x3f133d4d,1699) = -1 errno=11 (Resource temporarily unavailable)
+407665 ppoll(0x4000007ff7dc,2,(nil),(nil)) = 1
+407665 read(6,0x3f133d4d,1699) = 106
+407665 read(6,0x3f133db7,1593) = 6
+407665 read(6,0x3f133dbd,1587) = -1 errno=11 (Resource temporarily unavailable)
+407665 ppoll(0x4000007ff7dc,2,(nil),(nil)) = 1
+407665 read(6,0x3f133dbd,1587) = 109
+407665 read(6,0x3f133e2a,1478) = -1 errno=11 (Resource temporarily unavailable)
+407665 ppoll(0x4000007ff7dc,2,(nil),(nil)) = 1
+407665 read(6,0x3f133e2a,1478) = 108
+407665 read(6,0x3f133e96,1370) = -1 errno=11 (Resource temporarily unavailable)
+407665 ppoll(0x4000007ff7dc,2,(nil),(nil)) = 1
+407665 read(6,0x3f133e96,1370) = 113
+407665 read(6,0x3f133f07,1257) = 42
+407665 read(6,0x3f133f31,1215) = 87
+407665 read(6,0x3f133f88,1128) = -1 errno=11 (Resource temporarily unavailable)
+407665 ppoll(0x4000007ff7dc,2,(nil),(nil)) = 1
+407665 read(6,0x3f133f88,1128) = 42
+407665 read(6,0x3f133fb2,1086) = -1 errno=11 (Resource temporarily unavailable)
+407665 ppoll(0x4000007ff7dc,2,(nil),(nil)) = 1
+407665 read(6,0x3f133fb2,1086) = 23
+407665 read(6,0x3f133fc9,1063) = -1 errno=11 (Resource temporarily unavailable)
+407665 ppoll(0x4000007ff7dc,2,(nil),(nil)) = 2
+407665 read(4,0x7ff6f0,32) = 0
+407665 ioctl(6,FIONBIO,0) = 0
+407665 read(6,0x3f133fc9,1063) = 0
+407665 close(6) = 0
+407665 close(4) = 0
+407665 wait4(407677,0x4000007ff8a0,0,(nil)) = 407677
+407665 openat(AT_FDCWD,"/etc/fstab",O_RDONLY|O_CLOEXEC) = 3
+407665 statx(3,"",AT_EMPTY_PATH|AT_STATX_SYNC_AS_STAT,STATX_ALL,0x00004000007ff590) = 0
+407665 read(3,0x3f1332f0,37) = 37
+407665 read(3,0x7ff5f0,32) = 0
+407665 close(3) = 0
+407665 socket(PF_UNIX,SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK,IPPROTO_IP) = 3
+407665 connect(3,0x7fe638,110) = -1 errno=2 (No such file or directory)
+407665 close(3) = 0
+407665 socket(PF_UNIX,SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK,IPPROTO_IP) = 3
+407665 connect(3,0x7fe808,110) = -1 errno=2 (No such file or directory)
+407665 close(3) = 0
+407665 newfstatat(AT_FDCWD,"/etc/nsswitch.conf",0x00004000007fe6e0,0) = 0
+407665 newfstatat(AT_FDCWD,"/",0x00004000007fe808,0) = 0
+407665 openat(AT_FDCWD,"/etc/nsswitch.conf",O_RDONLY|O_CLOEXEC) = 3
+407665 fstat(3,0x00004000007fe608) = 0
+407665 read(3,0x3f132ae0,1024) = 494
+407665 read(3,0x3f132ae0,1024) = 0
+407665 fstat(3,0x00004000007fe6e0) = 0
+407665 close(3) = 0
+407665 newfstatat(AT_FDCWD,"/etc/resolv.conf",0x00004000007fe7b0,0) = 0
+407665 openat(AT_FDCWD,"/etc/host.conf",O_RDONLY|O_CLOEXEC) = 3
+407665 fstat(3,0x00004000007fe1f8) = 0
+407665 read(3,0x3f132ae0,1024) = 92
+407665 read(3,0x3f132ae0,1024) = 0
+407665 close(3) = 0
+407665 futex(0x0000400000a77ab0,FUTEX_PRIVATE_FLAG|FUTEX_WAKE,2147483647,NULL,0x0001000002889ea0,42507936) = 0
+407665 openat(AT_FDCWD,"/etc/resolv.conf",O_RDONLY|O_CLOEXEC) = 3
+407665 fstat(3,0x00004000007fe438) = 0
+407665 read(3,0x3f134c80,4096) = 23
+407665 read(3,0x3f134c80,4096) = 0
+407665 uname(0x4000007fe400) = 0
+407665 fstat(3,0x00004000007fe510) = 0
+407665 close(3) = 0
+407665 openat(AT_FDCWD,"/etc/hosts",O_RDONLY|O_CLOEXEC) = 3
+407665 fstat(3,0x00004000007fe6c8) = 0
+407665 lseek(3,0,SEEK_SET) = 0
+407665 read(3,0x3f134c80,4096) = 27
+407665 read(3,0x3f134c80,4096) = 0
+407665 close(3) = 0
+407665 socket(PF_INET,SOCK_STREAM|SOCK_CLOEXEC,IPPROTO_IP) = 3
+407665 connect(3,0x7ff804,16) = 0
+407665 setsockopt(3,1,20,0x4000007ff8d0,0x10) = 0
+407665 recvfrom(3,70368752564224,32,0,0,0) = 31
+407665 recvfrom(3,139961157497279,32,0,0,0) = 0
+407665 close(3) = 0
+407665 sigaltstack(0x4000007ffb48,(nil)) = 0
+407665 munmap(0x0000400000a83000,20480) = 0
+407665 exit_group(0)
