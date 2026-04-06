@@ -1,0 +1,16 @@
+Fetching file size...
+Total size: 32127327286 bytes
+Fetching last 102400 bytes...
+Found standard EOCD signature!
+EOCD Info: {'total_entries': 9, 'cd_size': 997, 'cd_offset': 4294967295}
+Standard EOCD indicates Zip64. We need to find the Zip64 Locator.
+Zip64 CD Offset: 32127326191, CD Size: 997, Total Entries: 9
+Fetching Central Directory (size: 997, offset: 32127326191)...
+Parsing Central Directory...
+Traceback (most recent call last):
+  File "/app/custom_unzip.py", line 167, in <module>
+    main()
+  File "/app/custom_unzip.py", line 91, in main
+    unpacked = struct.unpack(fmt, cd_data[pos:pos+46])
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+struct.error: unpack requires a buffer of 44 bytes
