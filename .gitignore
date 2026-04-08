@@ -1,0 +1,6 @@
+pts_mult.txt
+params.gp
+params2.gp
+*.py
+*.gp
+*.sage
