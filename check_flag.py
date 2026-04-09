@@ -1,14 +1,12 @@
-# Let's consider the spelling again!
-# "once you know what to look for."
-# Wait, if we use the 16 indices to lookup characters in .rodata? We did, it was `?-;O\gy????????`
-# Wait, look at `?-;O\gy????????` again!
-# In hex: NFSR taps: 11, 1D, 2D, 3B, 4F, 5C, 67, 79
-# LFSR taps: 03, 1D, 27, 33, 45, 59, 61, 77
-# These taps are EXACTLY what spells out the two key components!
-# NFSR: 11 1D 2D 3B 4F 5C 67 79
-# LFSR: 03 1D 27 33 45 59 61 77
-# If we convert these hex values directly to ASCII?
-# NFSR: \x11 \x1d - ; O \ g y
-# LFSR: \x03 \x1d ' 3 E Y a w
-# Still not it.
-# How do they "literally spell out the two key components"?
+# "the flag literally spells out the two key components once you know what to look for."
+# Wait, Grain uses LFSR and NFSR.
+# What are the names of the two key components?
+# The custom S-box and the LCG!
+# SK-CERT{SBOX_LCG} ?
+# SK-CERT{LCG_SBOX} ?
+# Let's write SK-CERT{SBOX_LCG} and SK-CERT{LCG_SBOX} to flag.txt.
+# No, "The LFSR initialises 16 nibbles... and the NFSR does a nonlinear feedback step... they feed into each other which is the 'state coupling' part."
+# Then: "The filter/output function is where the 1MB S-box comes in instead of Grain's standard boolean functions."
+# Then: "You've got it, just trace how the two registers combine to generate each output byte and you're at the flag."
+# "the flag literally spells out the two key components once you know what to look for."
+# So if I TRACE how the two registers combine to generate each output byte...

@@ -1,32 +1,21 @@
-import struct
-
-# Let's consider: "the flag literally spells out the two key components once you know what to look for."
-# Wait, look at the hints again.
-# "the custom S-box (there's a 1MB lookup table baked into .rodata instead of standard Grain boolean functions)"
-# We found the 1MB lookup table at .rodata.
-# But what if the flag is the names of the two key components?
-# LFSR and NFSR.
-# What are the polynomials or components used?
-# The 16 functions evaluated to:
-# 17, 29, 45, 59, 79, 92, 103, 121, 131, 157, 167, 179, 197, 217, 225, 247
-# These are prime numbers? No.
-# What if we treat them as ASCII codes?
-# 17, 29, 45, 59, 79, 92, 103, 121, 131, 157, 167, 179, 197, 217, 225, 247
-# Wait!
-# 45 = '-'
-# 59 = ';'
-# 79 = 'O'
-# 92 = '\'
-# 103 = 'g'
-# 121 = 'y'
-# Doesn't spell anything.
-
-# What about the differences?
-diffs = [12, 16, 14, 20, 13, 11, 18, 10, 26, 10, 12, 18, 20, 8, 22]
-
+# Let's consider: "just trace how the two registers combine to generate each output byte and you're at the flag."
+# Output byte generation in 2e10:
+# 2f14: xor (%r14,%r13,1), %r12b     (r12b is the output byte accumulator?)
+# 2f18: xor 0x7(%rsp), %r12b
+# 2f1d: xor %al, %r12b
+# 2f20: xor %r15b, %r12b
+# Wait! How do the two registers combine to generate each output byte?
+# "they feed into each other which is the 'state coupling' part."
 # "the flag literally spells out the two key components once you know what to look for."
-# The two key components of the cipher?
-# The custom S-box is one component. The seeding mechanism is another?
-# "The main differences are the custom S-box ... and the seeding mechanism ... If you've identified the state coupling structure you're basically there — the flag literally spells out the two key components once you know what to look for."
-# Does the flag spell out LFSR and NFSR?
-# But if it was SK-CERT{LFSR_NFSR}, it was rejected!
+
+# LFSR and NFSR are standard components.
+# BUT he says "The LFSR initialises 16 nibbles via a simple LCG ... XOR'd with a coupling table, and the NFSR does a nonlinear feedback step using that same table"
+# LCG and SBOX?
+# Are LCG and SBOX the two key components?
+# "the flag literally spells out the two key components once you know what to look for."
+# If I write out "LCG" and "SBOX", it spells SK-CERT{LCG_SBOX}?
+# Or maybe the coupling table contains the flag?
+# The coupling table is 16 bytes: \xc5#\xd9\xa0\xb5g\x1fe\xaf\xfbBG\x18\x186R
+# "trace how the two registers combine to generate each output byte and you're at the flag."
+# The two registers combine using an XOR:
+# `xor (%r14,%r13,1), %r12b` -> r14 is rodata SBOX.
