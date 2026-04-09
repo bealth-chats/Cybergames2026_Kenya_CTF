@@ -1,1 +1,1 @@
-SK-CERT{Grain-128}
+SK-CERT{LFSR_NFSR}
