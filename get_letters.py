@@ -9,14 +9,13 @@ with open('points.txt', 'r') as f:
 lats = [p[0] for p in points]
 lons = [p[1] for p in points]
 
-# check left part
 def save_crop(name, xmin, xmax):
-    plt.figure(figsize=(10, 10))
+    plt.figure(figsize=(5, 5))
     plt.plot(lons, lats, marker='.', markersize=2, linestyle='-')
     plt.axis('equal')
     plt.xlim(xmin, xmax)
+    plt.title(name)
     plt.savefig(f'{name}.png')
-    print(f"Saved to {name}.png")
+    print(f"Saved {name}.png")
 
-save_crop('cked_again', 17.0805, 17.082)
-save_crop('h1j_again', 17.079, 17.081)
+save_crop('LET_U2', 17.0766, 17.0772)
