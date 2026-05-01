@@ -1,0 +1,18 @@
+# 4-Lane Backup Fragment
+
+What survived is not a transcript.
+It is a residue.
+
+A backup was recovered from an experimental elliptic-curve accelerator built around a 4-lane arithmetic core. Very little was preserved: a field boundary, a lane relation, a short curve description, several modular fragments, and one sealed payload.
+The machine was designed to move information across four lanes, but the lanes do not behave as four separate worlds. Some parts travel intact. Some parts collapse. Some parts only become visible after reduction.
+A single concealed quantity passes through the same machinery more than once, and each row shows only a narrow slice of what remains after reduction. The slices are small on purpose.
+
+A few things are easy to misread:
+
+Do not search for randomness where there is only repetition.
+Do not search for interaction where there is only reuse.
+Do not assume that what is hidden is also absent.
+
+The sealed payload does not need to be attacked directly.
+
+What survived is enough.
