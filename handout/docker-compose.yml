@@ -1,0 +1,9 @@
+services:
+  v8:
+    build:
+      context: .
+      network: host
+    container_name: v8
+    ports:
+      - 1337:1337
+    restart: always
